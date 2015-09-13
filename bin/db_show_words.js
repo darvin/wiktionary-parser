@@ -1,7 +1,11 @@
+#!/usr/bin/env node --harmony
+var argv = require('yargs').argv;
+
+
 var etymolator = require("../");
 var prettyjson = require('prettyjson');
 var co = require("co");
-var word= process.argv[2];
+var word= argv._[0] ;
 var comongo = require('co-mongo');
 
 co(function *() {
@@ -24,11 +28,11 @@ co(function *() {
 		var doc = yield collection.findOne({ title: word });
 
 	  console.log("Word '"+word+"'");
-	  var options = {
-		  noColor: false
-		};
-		console.log(prettyjson.render(doc, options));
-	  yield db.close();
+	  console.log(prettyjson.render(doc));
+
+	  var parsedText = yield etymolator.parseText(word, doc.text);
+	  console.log(prettyjson.render(parsedText));
+	  yield 	db.close();
 
 		
 	}

@@ -7,6 +7,9 @@ comongo.configure({
     port: 27017,
     name: 'etymolator',
     pool: 10,
-    collections: ['wiktionaryDump']
+    collections: ['wiktionaryDump', 'words']
 });
 
+exports.parseText = function *(title, text) {
+  return {};
+}
