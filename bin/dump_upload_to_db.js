@@ -26,9 +26,10 @@ var comongo = require('co-mongo');
 
 co(function *() {
   var db = yield comongo.get();
+  var specialLanguagesNamespaces=etymolator.getSpecialLanguagesNamespaces();
 
   var collection = db.wiktionaryDump;
-  yield collection.ensureIndex({title:1}, {unique:true});
+  yield collection.ensureIndex({title:1, namespace:1}, {unique:true});
 
   var xml = new XmlStream(stream);
   xml._preserveAll=true //keep newlines
@@ -37,7 +38,14 @@ co(function *() {
   xml.on('endElement: page', function(page) { 
     co(function *() {
       try {
-        if(page.ns!="0"){
+        var namespaceName = null;
+        if (page.ns!="0") {
+          namespaceName = page.title.split(":")[0];
+        }
+
+        if(//namespaceName==null ||
+          specialLanguagesNamespaces.has(namespaceName)
+          ){
           count ++;
           if (verbose) {
             console.log("input article #", count, page.title);
@@ -66,7 +74,8 @@ co(function *() {
 
             var r = yield collection.insert({
               title:page.title,
-              text:script
+              text:script,
+              namespace:namespaceName
             });
             if (verbose) {
               console.log("Written to db: ", prettyjson.render(r));
@@ -75,6 +84,10 @@ co(function *() {
             if (count%1000==0) {
               console.log("Written to db: ",count);
             }
+          }
+        } else if (namespaceName) {
+          if (verbose) {
+            // console.log("Article from ignored namespace: ", namespaceName);
           }
         }
       } catch (err) {
