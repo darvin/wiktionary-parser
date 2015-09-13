@@ -26,8 +26,6 @@ var comongo = require('co-mongo');
 
 co(function *() {
   var db = yield comongo.get();
-  var specialLanguagesNamespaces=etymolator.getSpecialLanguagesNamespaces();
-
   var collection = db.wiktionaryDump;
   yield collection.ensureIndex({title:1, namespace:1}, {unique:true});
 
@@ -39,16 +37,18 @@ co(function *() {
     co(function *() {
       try {
         var namespaceName = null;
+        var title = page.title;
         if (page.ns!="0") {
-          namespaceName = page.title.split(":")[0];
+          namespaceName = page.title.split("/")[0];
+          title = page.title.split("/")[1];
         }
 
-        if(//namespaceName==null ||
-          specialLanguagesNamespaces.has(namespaceName)
+        if(namespaceName==null ||
+          etymolator.getSpecialNamespaces().hasOwnProperty(namespaceName)
           ){
           count ++;
           if (verbose) {
-            console.log("input article #", count, page.title);
+            console.log("input article #", count, title);
 
           }
           if (count>=skip+limit) {
@@ -62,28 +62,27 @@ co(function *() {
 
           } else {
             var script=page.revision.text["$text"] || '';
+            var ns = etymolator.getLangCodeForNamespace(namespaceName)||null;
             if (script.length<3000&&skipSmall) {
               return;
             }
-            if (verbose) {
-              console.log("text:\n", script);
-            }
-
-            if (verbose) {
-            }
-
-            var r = yield collection.insert({
-              title:page.title,
+            
+            var doc = {
+              title:title,
               text:script,
-              namespace:namespaceName
-            });
+              namespace:ns
+            }
+
+            // console.log("doc", doc);
+            if (count%1000==0) {
+              console.log("Writting to db: ",count);
+            }
+            var r = yield collection.insert(doc);
             if (verbose) {
-              console.log("Written to db: ", prettyjson.render(r));
+              // console.log("Written to db: ", prettyjson.render(r));
 
             }
-            if (count%1000==0) {
-              console.log("Written to db: ",count);
-            }
+            
           }
         } else if (namespaceName) {
           if (verbose) {

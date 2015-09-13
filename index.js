@@ -22,7 +22,6 @@ function ensureLangs() {
 	}
 
 	var languages = require("./lib/languages");
-	var namespaces = new Set();
 	var langsForNamespace = {};
 
 	for (var code in languages) {
@@ -31,15 +30,18 @@ function ensureLangs() {
 	    if (language.type!="regular"){
 	    	var ns = "Appendix:"+language.canonicalName;
 	    	langsForNamespace[ns] = code;
-	    	namespaces.add(ns);
 	    }
 	  }
 	}
 	langs = {
-		specialNamespaces:namespaces,
 		langsForNamespace:langsForNamespace
 	}
 
+}
+
+exports.getSpecialNamespaces = function(namespace) {
+	ensureLangs();
+	return langs.langsForNamespace;
 }
 
 
@@ -48,7 +50,4 @@ exports.getLangCodeForNamespace = function(namespace) {
 	return langs.langsForNamespace[namespace];
 }
 
-exports.getSpecialLanguagesNamespaces = function () {
-	ensureLangs();
-	return langs.specialNamespaces;
-}
+
