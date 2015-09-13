@@ -37,10 +37,11 @@ co(function *() {
   xml.on('endElement: page', function(page) { 
     co(function *() {
       try {
-        if(page.ns=="0"){
+        if(page.ns!="0"){
           count ++;
           if (verbose) {
-            console.log("input article #", count);
+            console.log("input article #", count, page.title);
+
           }
           if (count>=skip+limit) {
             process.exit();
@@ -61,7 +62,6 @@ co(function *() {
             }
 
             if (verbose) {
-              console.log("Article title is ", page.title);
             }
 
             var r = yield collection.insert({

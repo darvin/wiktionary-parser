@@ -28,7 +28,7 @@ co(function *() {
 		var doc = yield collection.findOne({ title: word });
 
 	  console.log("Word '"+word+"'");
-	  console.log(prettyjson.render(doc));
+	  console.log(doc.text);
 
 	  var parsedText = yield etymolator.parseText(word, doc.text);
 	  console.log(prettyjson.render(parsedText));

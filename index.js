@@ -1,4 +1,3 @@
-var Datastore = require('nedb');
 var path=require('path');
 var comongo = require('co-mongo');
  
