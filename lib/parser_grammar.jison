@@ -1,25 +1,37 @@
+%lex
+%%
+header1 : return "HEADER1";
+header2 : return "HEADER2";
+header3 : return "HEADER3";
+header4 : return "HEADER4";
+header5 : return "HEADER5";
+header6 : return "HEADER6";
+
+
+
+%%
 
 /* General */
 
 digit        
     : ("1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9"|"0");
 URL          
-    : ASCII_letter "://" URL_char;
+    : ASCII_letter, "://", URL_char;
 ASCII_letter 
     : ("a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m"
                 | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
                 | "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M"
                 | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z");
 URL_char     
-    : (ASCII letter | digit | "-" | "_" | "." | "~" | "!" | "*" | "'" | "(" | ")" | ";"
+    : (ASCII_letter | digit | "-" | "_" | "." | "~" | "!" | "*" | "'" | "(" | ")" | ";"
                 | ":" | "@" | "&" | "=" | "+" | "$" | "," | "/" | "?" | "%" | "#" | "[" | "]");
 Unicode_char 
-    : /* Assume this is all valid Unicode characters. */;
+    : [:alnum:] ;
 text         
-    : { Unicode_char };
+    : Unicode_char+ ;
 
 full_pagename
-    : [ namespace, ":" | ":" ] pagename;
+    : ((namespace ":")|":") pagename;
 namespace    
     : Unicode_char, { Unicode_char };
 pagename     
@@ -33,7 +45,7 @@ start_link
 end_link     
     : "]]";
 internal_link
-    : start_link, full_pagename, ["|", label], end_link, label_extension;
+    : start_link, full_pagename, ("|", label)?, end_link, label_extension;
 external_link
     : URL | (start_link, URL, [whitespace Label], endLink, label_extension);
 redirect     
@@ -48,7 +60,7 @@ ISBN_link
 /*  Headers  */
 
 header_end 
-    : [whitespace], line_break;
+    : whitespace*, line_break;
 header6    
     : line break, "======", [whitespace], text, [whitespace], "======", header_end;
 header5    
@@ -96,7 +108,7 @@ continue_ordered_list
     : (ordered_list|continue_ordered_list|":"|"*"|"#"),
                            linebreak, ordered_list;
 definition_list         
-    : [text], ":", text;
+    : text?, ":", text;
 continue_definition_list
     : (definition_list|continue_definition_list|":"|"*"|"#"),
                            linebreak, definition_list;
@@ -117,9 +129,9 @@ current_date
 include 
     : ( template | tplarg ) ;
 template
-    : "{{", title, { "|", part }, "}}" ;
+    : "{{" title ( "|", part )* "}}" ;
 tplarg  
-    : "{{{", title, { "|", part }, "}}}" ;
+    : "{{{", title, ( "|", part )*, "}}}" ;
 part    
     : [ name, "=" ], value ;    
 title   
@@ -135,23 +147,23 @@ balanced_text
 /* Behavior switches */
 
 place_TOC           
-    : {whitespace|linebreak}, "__TOC__",           {whitespace|linebreak};
+    : (whitespace|linebreak), "__TOC__",           (whitespace|linebreak);
 force_TOC           
-    : {whitespace|linebreak}, "__FORCETOC__",      {whitespace|linebreak};
+    : (whitespace|linebreak), "__FORCETOC__",      (whitespace|linebreak);
 disable_TOC         
-    : {whitespace|linebreak}, "__NOTOC__",         {whitespace|linebreak};
+    : (whitespace|linebreak), "__NOTOC__",         (whitespace|linebreak);
 disable_section_edit
-    : {whitespace|linebreak}, "__NOEDITSECTION__", {whitespace|linebreak};
+    : (whitespace|linebreak), "__NOEDITSECTION__", (whitespace|linebreak);
 
 
 /* Tables */
-
+/*
 table_start      
     : "{|", {style|whitespace}, linebreak;
 table_end        
     : "|}";
 table_header     
-    : "|+", text, linebreak; /* What is this?  This exists? */
+    : "|+", text, linebreak; 
 table_header_cell
     : (linebreak, "!", ({style|whitespace}- "|"), text)
                   | (tablecell, ("!!" | "||"), ({style|whitespace}- "|"), text);
@@ -165,4 +177,4 @@ table_body
     : ( table_header_cell | table_cell ),
                     { table_row, ( table_header_cell | table cell ) };
 table            
-    : table_start, [table_row], table_body, table_end;
+    : table_start, [table_row], table_body, table_end;*/
