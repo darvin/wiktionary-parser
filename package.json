@@ -15,7 +15,7 @@
     "co-mongo": "git@github.com:darvin/co-mongo.git",
     "mocha": "^2.3.2",
     "mongodb": "*",
-    "pegjs": "^0.9.0",
+    "pegjs": "git+https://github.com/tstarling/pegjs#fork",
     "prettyjson": "^1.1.3",
     "superagent": "^1.3.0",
     "xml-stream": "*",
