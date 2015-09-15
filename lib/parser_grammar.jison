@@ -1,180 +1,476 @@
-%lex
-%%
-header1 : return "HEADER1";
-header2 : return "HEADER2";
-header3 : return "HEADER3";
-header4 : return "HEADER4";
-header5 : return "HEADER5";
-header6 : return "HEADER6";
 
-
+%token  EXTENSION BEGINCOMMENT TEXT ENDCOMMENT OPENLINK OPENDBLSQBR CLOSEDBLSQBR PIPE NEWLINE PRELINE LISTBULLET LISTNUMBERED LISTIDENT HEADING ENDHEADING APO5 APO3 APO2 TABLEBEGIN TABLECELL TABLEHEAD TABLEROW TABLEEND TABLECAPTION ATTRIBUTE EQUALS ATTRAPO ATTRQ OPENPENTUPLECURLY CLOSEPENTUPLECURLY OPENTEMPLATEVAR CLOSETEMPLATEVAR OPENTEMPLATE CLOSETEMPLATE
+/* LINKTRAIL OPENEXTERNALLINK CLOSEEXTERNALLINK PROTOCOL PROTOCOLSEP */
+    
+%start article
 
 %%
+/* rules */
 
-/* General */
+    /* TODO:
+        - optimise zeroormorenewlinessave (no need for Newlines nodes)
+        - find all 'memcpy's and add a 'sizeof (char)' wherever necessary
 
-digit        
-    : ("1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9"|"0");
-URL          
-    : ASCII_letter, "://", URL_char;
-ASCII_letter 
-    : ("a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m"
-                | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
-                | "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M"
-                | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z");
-URL_char     
-    : (ASCII_letter | digit | "-" | "_" | "." | "~" | "!" | "*" | "'" | "(" | ")" | ";"
-                | ":" | "@" | "&" | "=" | "+" | "$" | "," | "/" | "?" | "%" | "#" | "[" | "]");
-Unicode_char 
-    : [:alnum:] ;
-text         
-    : Unicode_char+ ;
+       UNATTENDED-TO CAVEATS:
+        - a row beginning with TABLEBEGIN but not containing valid table mark-up
+          (e.g. "| Hah!" + NEWLINE) is turned into a paragraph of its own even
+          if it and the next line are separated by only one newline (so they should
+          all be one paragraph).
+    */
 
-full_pagename
-    : ((namespace ":")|":") pagename;
-namespace    
-    : Unicode_char, { Unicode_char };
-pagename     
-    : Unicode_char, { Unicode_char };
+article         :   /* empty */
+                |   oneormorenewlines
+                |   blocks
+                ;
 
+blocks          :   block
+                |   blocks block
+                ;
 
-/*  Links  */
+blocksintbl     :   blockintbl
+                |   blocksintbl blockintbl
+                ;
 
-start_link   
-    : "[[";
-end_link     
-    : "]]";
-internal_link
-    : start_link, full_pagename, ("|", label)?, end_link, label_extension;
-external_link
-    : URL | (start_link, URL, [whitespace Label], endLink, label_extension);
-redirect     
-    : "#REDIRECT", internal_link;
-header_link  
-    : "/*", text, "*/";
-ISBN_link    
-    : digit, ["-"|" "], 3 * digit, ["-"|" "], 5 * digit,
-                [("-"|" "),(digit|"X"|"x")];
+block           :   preblock
+                |   heading zeroormorenewlines
+                |   listblock zeroormorenewlines
+                |   paragraph zeroormorenewlines
+                |   table zeroormorenewlines
+                |   comment zeroormorenewlines
+                ;
 
+blockintbl      :   preblock
+                |   heading zeroormorenewlines
+                |   listblock zeroormorenewlines
+                |   paragraphintbl zeroormorenewlines
+                |   table zeroormorenewlines
+                |   comment zeroormorenewlines
+                ;
 
-/*  Headers  */
+heading         :   HEADING text ENDHEADING
+                |   HEADING text  /* for eof */
+                |   HEADING
+                ;
 
-header_end 
-    : whitespace*, line_break;
-header6    
-    : line break, "======", [whitespace], text, [whitespace], "======", header_end;
-header5    
-    : line break, "=====",  [whitespace], text, [whitespace], "=====",  header_end;
-header4    
-    : line break, "====",   [whitespace], text, [whitespace], "====",   header_end;
-header3    
-    : line break, "===",    [whitespace], text, [whitespace], "===",    header_end;
-header2    
-    : line break, "==",     [whitespace], text, [whitespace], "==",     header_end;
-header1    
-    : line break, "=",      [whitespace], text, [whitespace], "=",      header_end;
-comment    
-    : "<!--", [Text], "-->";
-Commentary 
-    : "<comment", [Text], ">", [Text], "</comment>"; /* This works? */
+preblock        :   preline
+                |   preblock preline
+                ;
 
+preline         :   PRELINE textorempty zeroormorenewlinessave
+                ;
 
-/*  Formatting  */
+listblock       :   bulletlistblock
+                |   numberlistblock
+                |   identlistblock
+                ;
 
-horizontal_rule 
-    : "----", {"-"};
-bold_italic_text
-    : "'''''", text, "'''''";
-bold_text       
-    : "'''", text, "'''"; 
-italic_text     
-    : "''", text, "''";
-code_line       
-    : linebreak, " ", text;
-nowiki          
-    : "&lt;nowiki&gt;", text, "&lt;/nowiki&gt;";
+bulletlistblock :   bulletlistline
+                |   bulletlistblock bulletlistline
+                ;
+numberlistblock :   numberlistline
+                |   numberlistblock numberlistline
+                ;
+identlistblock  :   identlistline
+                |   identlistblock identlistline
+                ;
 
+bulletlistline  :   LISTBULLET listseries textorempty NEWLINE
+                |   LISTBULLET listseries textorempty
+                ;
+numberlistline  :   LISTNUMBERED listseries textorempty NEWLINE
+                |   LISTNUMBERED listseries textorempty
+                ;
+identlistline   :   LISTIDENT listseries textorempty NEWLINE
+                |   LISTIDENT listseries textorempty
+                ;
 
-/*  Lists  */
-
-unordered_list          
-    : "*", text;
-continue_unordered_list 
-    : (unordered_list|continue_unordered_list|":"|"*"|"#"),
-                           linebreak, unordered_list;
-ordered_list            
-    : "#", text;
-continue_ordered_list   
-    : (ordered_list|continue_ordered_list|":"|"*"|"#"),
-                           linebreak, ordered_list;
-definition_list         
-    : text?, ":", text;
-continue_definition_list
-    : (definition_list|continue_definition_list|":"|"*"|"#"),
-                           linebreak, definition_list;
+listseries      :   /* empty */
+                |   LISTBULLET
+                |   LISTNUMBERED
+                |   LISTIDENT
+                |   listseries LISTBULLET
+                |   listseries LISTNUMBERED
+                |   listseries LISTIDENT
+                ;
 
 
-/*  Signature  */
 
-user_signature          
-    : "~~~";
-user_signature_with_date
-    : "~~~~";
-current_date            
-    : "~~~~~";
+linktrail       : CLOSEDBLSQBR
+                ;
 
 
-/*  Includes  */
-
-include 
-    : ( template | tplarg ) ;
-template
-    : "{{" title ( "|", part )* "}}" ;
-tplarg  
-    : "{{{", title, ( "|", part )*, "}}}" ;
-part    
-    : [ name, "=" ], value ;    
-title   
-    : balanced_text ;
-name    
-    : balanced_text ;
-value   
-    : balanced_text ;
-balanced_text
-    : text_without_consecutive_equal_braces, { include, text_without_consecutive_equal_braces } ;
-
-
-/* Behavior switches */
-
-place_TOC           
-    : (whitespace|linebreak), "__TOC__",           (whitespace|linebreak);
-force_TOC           
-    : (whitespace|linebreak), "__FORCETOC__",      (whitespace|linebreak);
-disable_TOC         
-    : (whitespace|linebreak), "__NOTOC__",         (whitespace|linebreak);
-disable_section_edit
-    : (whitespace|linebreak), "__NOEDITSECTION__", (whitespace|linebreak);
+/*|   externallink*/
+linketc         :   OPENDBLSQBR textinlink linktrail
+                |   OPENDBLSQBR textinlink PIPE linktrail
+                |   OPENDBLSQBR textinlink pipeseries linktrail
+                |   OPENDBLSQBR textinlink pipeseries PIPE linktrail
+                |   OPENLINK textinlink linktrail
+                |   OPENLINK textinlink PIPE linktrail
+                |   OPENLINK textinlink pipeseries linktrail
+                |   OPENLINK textinlink pipeseries PIPE linktrail
+                    /* ... and now everything again with the CLOSEDBLSQBR missing,
+                     * to take care of invalid mark-up. */
+                |   OPENDBLSQBR textinlink
+                |   OPENDBLSQBR textinlink PIPE
+                |   OPENDBLSQBR textinlink pipeseries
+                |   OPENDBLSQBR textinlink pipeseries PIPE
+                |   OPENLINK textinlink
+                |   OPENLINK textinlink PIPE
+                |   OPENLINK textinlink pipeseries
+                |   OPENLINK textinlink pipeseries PIPE
+                ;
 
 
-/* Tables */
+pipeseries      :   PIPE textinlink
+                |   pipeseries PIPE textinlink
+                ;
+
+textorempty     :   /* empty */
+                |   text
+                ;
+
+italicsorbold   :   APO2 textnoital APO2
+                |   APO2 textnoital APO3 textnoboit APO5
+                |   APO2 textnoital APO3 textnoboit
+                |   APO2 textnoital
+                |   APO3 textnobold APO3
+                |   APO3 textnobold APO2 textnoboit APO5
+                /* Peculiar case, especially for French l'''homme'' => l'<italics>homme</italics> */
+                /* We have to use textnobold here, even though textnoital would be logical. */
+                /* We use processNestedItalics to fix the weirdness produced by this. */
+                |   APO3 textnobold APO2 textnoboit
+                |   APO3 textnobold APO2
+                |   APO3 textnobold
+                |   APO5 textnoboit APO5
+                |   APO5 textnoboit APO3 textnoital APO2
+                |   APO5 textnoboit APO3 textnoital
+                |   APO5 textnoboit APO3
+                |   APO5 textnoboit APO2 textnobold APO3
+                |   APO5 textnoboit APO2 textnobold
+                |   APO5 textnoboit APO2
+                |   APO5 textnoboit
+                ;
+
+italicsnobold   :   APO2 textnoboit APO2
+                |   APO2 textnoboit
+                ;
+
+boldnoitalics   :   APO3 textnoboit APO3
+                |   APO3 textnoboit
+                ;
+
+table           :   TABLEBEGIN attributes tablerows TABLEEND
+                |   TABLEBEGIN attributes tablerows
+                |   TABLEBEGIN attributes oneormorenewlines tablerows TABLEEND
+                |   TABLEBEGIN attributes oneormorenewlines tablerows
+                |   TABLEBEGIN tablerows TABLEEND
+                |   TABLEBEGIN tablerows
+                |   TABLEBEGIN oneormorenewlines tablerows TABLEEND
+                |   TABLEBEGIN oneormorenewlines tablerows
+                /* and now some invalid mark-up catering ... */
+                |   TABLEBEGIN attributes zeroormorenewlines
+                |   TABLEBEGIN attributes text zeroormorenewlines
+                |   TABLEBEGIN text zeroormorenewlines
+                |   TABLEBEGIN oneormorenewlines
+                ;
+
+tablerows       :   tablerow
+                |   tablerows tablerow
+                ;
+
+tablerow        :   TABLEROW attributes tablecells
+                |   TABLEROW tablecells
+                |   TABLEROW attributes oneormorenewlines tablecells
+                |   TABLEROW oneormorenewlines tablecells
+                /* It is possible for the first table row to have no TABLEROW token */
+                |   tablecells
+                /* Some invalid mark-up catering... */
+                |   TABLEROW attributes oneormorenewlines
+                |   TABLEROW attributes
+                |   TABLEROW oneormorenewlines
+                |   TABLEROW
+                |   tablecaption
+                ;
+
+tablecells      :   tablecell
+                |   tablecells tablecell
+                ;
+
+tablecell       :   TABLECELL attributes PIPE tablecellcontents
+                |   TABLECELL tablecellcontents
+                |   TABLECELL attributes PIPE oneormorenewlines
+                |   TABLECELL attributes PIPE
+                |   TABLECELL oneormorenewlines
+                |   TABLECELL
+                |   TABLEHEAD attributes PIPE tablecellcontents
+                |   TABLEHEAD tablecellcontents
+                |   TABLEHEAD attributes PIPE oneormorenewlines
+                |   TABLEHEAD attributes PIPE
+                |   TABLEHEAD oneormorenewlines
+                |   TABLEHEAD
+                ;
+
+tablecellcontents   :   blocksintbl
+                    |   oneormorenewlines blocksintbl
+                    ;
+
+tablecaption    :   TABLECAPTION attributes PIPE textintbl
+                |   TABLECAPTION attributes textintbl
+                |   TABLECAPTION textintbl
+                |   TABLECAPTION attributes PIPE
+                |   TABLECAPTION attributes
+                |   TABLECAPTION
+                ;
+
+/* In order to reduce the second one (ATTRIBUTE EQUALS TEXT) correctly, this rule must
+ * be further up than textelement. */
+attribute       :   ATTRIBUTE
+                |   ATTRIBUTE EQUALS TEXT
+                |   ATTRIBUTE EQUALS ATTRAPO text ATTRAPO
+                |   ATTRIBUTE EQUALS ATTRQ text ATTRQ
+                |   ATTRIBUTE EQUALS ATTRQ ATTRQ
+                |   ATTRIBUTE EQUALS
+                ;
+
+attributes      :   attribute
+                |   attributes attribute
+                ;
+
+text            :   textelement
+                |   text textelement
+                ;
+textnoital      :   textelementnoital
+                |   textnoital textelementnoital
+                ;
+textnobold      :   textelementnobold
+                |   textnobold textelementnobold
+                ;
+textnoboit      :   textelementnoboit
+                |   textnoboit textelementnoboit
+                ;
+textintbl       :   textelementintbl
+                |   textintbl textelementintbl
+                ;
+textinlink      :   textelementinlink
+                |   textinlink textelementinlink
+                ;
+textintmpl      :   textelementintmpl
+                |   textintmpl textelementintmpl
+                ;
+
+textelement         :   TEXT
+                    |   EXTENSION
+                    |   PIPE
+                    |   CLOSEDBLSQBR
+                    |   APO2
+                    |   APO3
+                    |   APO5
+                    |   EQUALS
+                    |   TABLEBEGIN
+                    |   TABLEEND
+                    |   TABLEROW
+                    |   TABLECELL
+                    |   TABLEHEAD
+                    |   TABLECAPTION
+                    |   ATTRIBUTE
+                    |   CLOSEPENTUPLECURLY
+                    |   CLOSETEMPLATEVAR
+                    |   CLOSETEMPLATE
+                    |   comment
+                    |   linketc
+                    |   italicsorbold
+                    |   template
+                    |   templatevar
+                    ;
+
+
+textelementnoital   :   TEXT
+                    |   EXTENSION
+                    |   PIPE
+                    |   CLOSEDBLSQBR
+                    |   TABLEBEGIN
+                    |   TABLEEND
+                    |   TABLEROW
+                    |   TABLECELL
+                    |   TABLEHEAD
+                    |   TABLECAPTION
+                    |   ATTRIBUTE
+                    |   CLOSEPENTUPLECURLY
+                    |   CLOSETEMPLATEVAR
+                    |   CLOSETEMPLATE
+                    |   comment
+                    |   linketc
+                    |   boldnoitalics
+                    |   template
+                    |   templatevar
+                    ;
+
+textelementnobold   :   TEXT
+                    |   EXTENSION
+                    |   PIPE
+                    |   CLOSEDBLSQBR
+                    |   TABLEBEGIN
+                    |   TABLEEND
+                    |   TABLEROW
+                    |   TABLECELL
+                    |   TABLEHEAD
+                    |   TABLECAPTION
+                    |   ATTRIBUTE
+                    |   CLOSEPENTUPLECURLY
+                    |   CLOSETEMPLATEVAR
+                    |   CLOSETEMPLATE
+                    |   comment
+                    |   linketc
+                    |   italicsnobold
+                    |   template
+                    |   templatevar
+                    ;
+
+textelementnoboit   :   TEXT
+                    |   EXTENSION
+                    |   PIPE
+                    |   CLOSEDBLSQBR
+                    |   TABLEBEGIN
+                    |   TABLEEND
+                    |   TABLEROW
+                    |   TABLECELL
+                    |   TABLEHEAD
+                    |   TABLECAPTION
+                    |   ATTRIBUTE
+                    |   CLOSEPENTUPLECURLY
+                    |   CLOSETEMPLATEVAR
+                    |   CLOSETEMPLATE
+                    |   comment
+                    |   linketc
+                    |   template
+                    |   templatevar
+                    ;
+
+textelementintbl    :   TEXT
+                    |   EXTENSION
+                    |   PIPE
+                    |   CLOSEDBLSQBR
+                    |   APO2
+                    |   APO3
+                    |   APO5
+                    |   EQUALS
+                    |   CLOSEPENTUPLECURLY
+                    |   CLOSETEMPLATEVAR
+                    |   CLOSETEMPLATE
+                    |   comment
+                    |   linketc
+                    |   italicsorbold
+                    |   template
+                    |   templatevar
+                    ;
+
+textelementinlink   :   TEXT
+                    |   EXTENSION
+                    |   APO2
+                    |   APO3
+                    |   APO5
+                    |   EQUALS
+                    |   TABLEBEGIN
+                    |   TABLEEND
+                    |   TABLEROW
+                    |   TABLECELL
+                    |   TABLEHEAD
+                    |   TABLECAPTION
+                    |   ATTRIBUTE
+                    |   CLOSEPENTUPLECURLY
+                    |   CLOSETEMPLATEVAR
+                    |   CLOSETEMPLATE
+                    |   comment
+                    |   linketc
+                    |   italicsorbold
+                    |   template
+                    |   templatevar
+                    ;
+
+textelementintmpl   :   TEXT
+                    |   EXTENSION
+                    |   PIPE
+                    |   CLOSEDBLSQBR
+                    |   APO2
+                    |   APO3
+                    |   APO5
+                    |   EQUALS
+                    |   TABLEBEGIN
+                    |   TABLEEND
+                    |   TABLEROW
+                    |   TABLECELL
+                    |   TABLEHEAD
+                    |   TABLECAPTION
+                    |   ATTRIBUTE
+                    |   comment
+                    |   linketc
+                    |   italicsorbold
+                    |   template
+                    |   templatevar
+                    ;
 /*
-table_start      
-    : "{|", {style|whitespace}, linebreak;
-table_end        
-    : "|}";
-table_header     
-    : "|+", text, linebreak; 
-table_header_cell
-    : (linebreak, "!", ({style|whitespace}- "|"), text)
-                  | (tablecell, ("!!" | "||"), ({style|whitespace}- "|"), text);
-table_cell       
-    : (linebreak, "|", ({style|whitespace}- "|"), text)
-                  | (table_cell, "||", ({Style|WhiteSpace}- "|"), text);
-table_row        
-    : linebreak, "|-", {"-"}, {style|whitespace}, linebreak;
+textinexternallink  :   TEXT
+            |   CLOSEEXTERNALLINK
+*/
+template            :   OPENTEMPLATE textintmpl CLOSETEMPLATE
+                    |   OPENPENTUPLECURLY textintmpl CLOSETEMPLATEVAR textintmpl CLOSETEMPLATE
+                    |   OPENTEMPLATE textintmpl OPENTEMPLATEVAR textintmpl CLOSEPENTUPLECURLY
+                    /* cater for invalid mark-up... */
+                    |   OPENTEMPLATE textintmpl
+                    |   OPENPENTUPLECURLY textintmpl CLOSETEMPLATEVAR textintmpl
+                    |   OPENTEMPLATE textintmpl OPENTEMPLATEVAR textintmpl
+                    ;
 
-table_body       
-    : ( table_header_cell | table_cell ),
-                    { table_row, ( table_header_cell | table cell ) };
-table            
-    : table_start, [table_row], table_body, table_end;*/
+templatevar         :   OPENTEMPLATEVAR textintmpl CLOSETEMPLATEVAR
+                    |   OPENPENTUPLECURLY textintmpl CLOSEPENTUPLECURLY
+                    /* cater for invalid mark-up... */
+                    |   OPENTEMPLATEVAR textintmpl
+                    |   OPENPENTUPLECURLY textintmpl
+                    ;
+
+zeroormorenewlines  :   /* empty */
+                    |   oneormorenewlines
+                    ;
+oneormorenewlines   :   NEWLINE
+                    |   oneormorenewlines NEWLINE
+                    ;
+
+zeroormorenewlinessave  :   /* empty */
+                        |   oneormorenewlinessave
+                        ;
+oneormorenewlinessave   :   NEWLINE
+                        |   oneormorenewlinessave NEWLINE
+                        ;
+
+paragraph       :   text NEWLINE
+                |   paragraph text NEWLINE
+                /* for eof ... */
+                |   text
+                |   paragraph text
+                ;
+
+/* This seemingly pointless inclusion of 'attributes' here that will all be converted to text
+ * by way of convertAttributesToText() is necessary because, as a table cell begins, we simply
+ * don't know whether there are attributes following or not. We parse them as attributes first,
+ * but then convert them back to text if it turns out they're not. */
+paragraphintbl  :   textintbl NEWLINE
+                |   attributes textintbl NEWLINE
+                |   attributes NEWLINE
+                |   paragraphintbl textintbl NEWLINE
+                |   paragraphintbl attributes textintbl NEWLINE
+                |   paragraphintbl attributes NEWLINE
+                /* for eof ... */
+                |   textintbl
+                |   attributes textintbl
+                |   attributes
+                |   paragraphintbl textintbl
+                |   paragraphintbl attributes textintbl
+                |   paragraphintbl attributes
+                ;
+
+comment         :   BEGINCOMMENT text ENDCOMMENT
+                |   BEGINCOMMENT ENDCOMMENT
+                ;
+
+
+%%
