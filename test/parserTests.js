@@ -5,7 +5,7 @@ var etymolator = require('../');
 var path = require('path');
 var fs = require('fs');
 
-describe('etymolator parser', function() {
+describe('wiktionary parser', function() {
   describe('parses "test"', function () {
   	var r = null;
   	before(function() {
