@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "co": "^4.6.0",
-    "co-mongo": "git@github.com:darvin/co-mongo.git",
+    "co-mongo": "git://github.com/darvin/co-mongo.git",
     "jison": "^0.4.15",
     "mongodb": "*",
     "prettyjson": "^1.1.3",
