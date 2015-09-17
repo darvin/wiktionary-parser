@@ -38,6 +38,6 @@ exports.getLangCodeForNamespace = function(namespace) {
 	return langs.langsForNamespace[namespace];
 }
 
-exports.parseWiki = require('./lib/parser').parseWiki;
+exports.Parser = require('./lib/parser');
 
 
