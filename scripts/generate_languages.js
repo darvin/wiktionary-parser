@@ -1,4 +1,4 @@
-#!/usr/bin/env node --harmony
+#!/usr/bin/env node
 var request = require('superagent');
 var path = require('path');
 var fs = require('fs');
