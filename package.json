@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prepublish": "./scripts/generate_parser.js && ./scripts/generate_languages.js",
-    "test": "./scripts/generate_parser.js && ./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/mocha"
   },
   "author": "",
   "license": "ISC",

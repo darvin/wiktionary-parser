@@ -1,20 +1,4 @@
-%lex
 
-%%
-\s+                   /* skip whitespace */
-[0-9]+("."[0-9]+)?\b  return 'NUMBER';
-"*"                   return '*';
-"/"                   return '/';
-"-"                   return '-';
-"+"                   return '+';
-"^"                   return '^';
-"("                   return '(';
-")"                   return ')';
-"PI"                  return 'PI';
-"E"                   return 'E';
-<<EOF>>               return 'EOF';
-
-/lex
 %token  EXTENSION BEGINCOMMENT TEXT ENDCOMMENT OPENLINK OPENDBLSQBR CLOSEDBLSQBR PIPE NEWLINE PRELINE LISTBULLET LISTNUMBERED LISTIDENT HEADING ENDHEADING APO5 APO3 APO2 TABLEBEGIN TABLECELL TABLEHEAD TABLEROW TABLEEND TABLECAPTION ATTRIBUTE EQUALS ATTRAPO ATTRQ OPENPENTUPLECURLY CLOSEPENTUPLECURLY OPENTEMPLATEVAR CLOSETEMPLATEVAR OPENTEMPLATE CLOSETEMPLATE
 /* LINKTRAIL OPENEXTERNALLINK CLOSEEXTERNALLINK PROTOCOL PROTOCOLSEP */
     
@@ -435,6 +419,7 @@ template            :   OPENTEMPLATE textintmpl CLOSETEMPLATE
                     |   OPENTEMPLATE textintmpl
                     |   OPENPENTUPLECURLY textintmpl CLOSETEMPLATEVAR textintmpl
                     |   OPENTEMPLATE textintmpl OPENTEMPLATEVAR textintmpl
+                    |   OPENTEMPLATE textintmpl PIPE attributes CLOSETEMPLATE
                     ;
 
 templatevar         :   OPENTEMPLATEVAR textintmpl CLOSETEMPLATEVAR

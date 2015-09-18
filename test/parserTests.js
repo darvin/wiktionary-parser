@@ -5,20 +5,6 @@ var wiktParser = require('../');
 var path = require('path');
 var fs = require('fs');
 
-describe.only('wiktionary lexer', function() {
-  var l = null;
-  before(function(){
-
-    l = wiktParser.Parser.lexer;
-    console.log("lexer",wiktParser.Parser.lexer);
-    console.log("parser",wiktParser.Parser);
-    console.log(wiktParser);
-  })
-  it('lexes simple stuff', function() {
-    l.setInput("asdfasfd");
-    expect(l.lex()).equal("a");
-  })
-});
 
 describe('wiktionary parser', function() {
   describe('parses "test"', function () {

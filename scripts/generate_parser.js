@@ -13,5 +13,6 @@ fs.writeFileSync(path.join(__dirname, "..", "lib", "_generated_parser.js"), pars
 var JisonLex = require('jison-lex');
 var lexerGrammar = fs.readFileSync(path.join(__dirname, "..", "lib", "lexer_grammar.jisonlex"), "utf8");
 lexer = new JisonLex(lexerGrammar);
-var lexerSource = lexer.generate();
-fs.writeFileSync(path.join(__dirname, "..", "lib", "_generated_lexer.js"), lexerSource, "utf8")
+var lexerSource = lexer.generateCommonJSModule();
+var lexerGeneratedPath = path.join(__dirname, "..", "lib", "_generated_lexer.js");
+fs.writeFileSync(lexerGeneratedPath, lexerSource, "utf8")
