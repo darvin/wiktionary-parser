@@ -132,7 +132,7 @@ describe('wiktionary lexer lexes', function() {
     expect(lexAll("[[lt:test]]")).deep.eql([ 'OPENDBLSQBR', 'TEXT:lt:test', 'CLOSEDBLSQBR' ]);
   });
 
-  it.only('templates with spaces', function() {
+  it('templates with spaces', function() {
     expect(lexAll("{{IPA|/tɛst/|lang=en}}")).deep.eql(
       [ 'OPENTEMPLATE',
         'TEXT:IPA',
@@ -159,7 +159,7 @@ describe('wiktionary lexer lexes', function() {
       );
   });
 
-  it ('templates inside templates', function() {
+  it('templates inside templates', function() {
     expect(lexAll("{{hyp3|title=Hyponyms of ''test''|{{l/en|acid test}}|some}}")).deep.eql([ 'OPENTEMPLATE',
       'TEXT:hyp3',
       'PIPE',
@@ -176,6 +176,19 @@ describe('wiktionary lexer lexes', function() {
       'TEXT:some',
       'CLOSETEMPLATE' ]);
 
+  });
+
+  it("complex quote", function() {
+    expect(lexAll(
+"#* {{quote-magazine|year=2013|month=May-June|author=[http://www.americanscientist.org/authors/detail/charles-t-ambrose Charles T. Ambrose]\n"+
+"|title=[http://www.americanscientist.org/issues/feature/2013/3/alzheimerrsquos-disease-the-great-morbidity-of-the-21st-century Alzheimer’s Disease]\n"+
+"|volume=101|issue=3|page=200|magazine={{w|American Scientist}}\n"+
+"|passage=Similar studies of rats have employed four different intracranial resorbable, slow sustained release systems&mdash;&nbsp;[&hellip;]. Such a slow-release device containing angiogenic factors could be placed on the pia mater covering the cerebral cortex and '''tested''' in persons with senile dementia in long term studies.}}\n"+
+"# {{context|copulative|lang=en}} To be shown to be by test.\n"+
+"#: {{usex|He '''tested''' positive for cancer.|lang=en}}\n"+
+"# {{context|chemistry|lang=en}} To examine or try, as by the use of some [[reagent]].")).deep.eql(
+  [ 'LISTNUMBERED','LISTBULLET','OPENTEMPLATE','TEXT:quote-magazine','PIPE','ATTRIBUTE:year','EQUALS','TEXT:2013','PIPE','ATTRIBUTE:month','EQUALS','TEXT:May-June','PIPE','ATTRIBUTE:author','EQUALS','OPENSQBR','TEXT:http://www.americanscientist.org/authors/detail/charles-t-ambrose Charles T. Ambrose]\\n','PIPE','ATTRIBUTE:title','EQUALS','OPENSQBR','TEXT:http://www.americanscientist.org/issues/feature/2013/3/alzheimerrsquos-disease-the-great-morbidity-of-the-21st-century Alzheimer’s Disease]\\n','PIPE','ATTRIBUTE:volume','EQUALS','TEXT:101','PIPE','ATTRIBUTE:issue','EQUALS','TEXT:3','PIPE','ATTRIBUTE:page','EQUALS','TEXT:200','PIPE','ATTRIBUTE:magazine','EQUALS','OPENTEMPLATE','TEXT:w','PIPE','TEXT:American Scientist','CLOSETEMPLATE','NEWLINE','PIPE','ATTRIBUTE:passage','EQUALS','TEXT:Similar studies of rats have employed four different intracranial resorbable, slow sustained release systems&mdash;&nbsp;[&hellip;]. Such a slow-release device containing angiogenic factors could be placed on the pia mater covering the cerebral cortex and \'\'\'tested\'\'\' in persons with senile dementia in long term studies.','CLOSETEMPLATE','NEWLINE','LISTNUMBERED','OPENTEMPLATE','TEXT:context','PIPE','TEXT:copulative','PIPE','ATTRIBUTE:lang','EQUALS','TEXT:en','CLOSETEMPLATE','PRELINE','TEXT:To be shown to be by test.','NEWLINE','LISTNUMBERED','LISTIDENT','OPENTEMPLATE','TEXT:usex','PIPE','TEXT:He \'\'\'tested\'\'\' positive for cancer.','PIPE','ATTRIBUTE:lang','EQUALS','TEXT:en','CLOSETEMPLATE','NEWLINE','LISTNUMBERED','OPENTEMPLATE','TEXT:context','PIPE','TEXT:chemistry','PIPE','ATTRIBUTE:lang','EQUALS','TEXT:en','CLOSETEMPLATE','PRELINE','TEXT:To examine or try, as by the use of some ','OPENDBLSQBR','TEXT:reagent','CLOSEDBLSQBR','TEXT:.' ]
+);
   });
 
   it("'test' word article", function() {

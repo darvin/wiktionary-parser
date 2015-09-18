@@ -230,14 +230,21 @@ TEXT:168\n
 PIPE
 ATTRIBUTE:magazine
 EQUALS
-TEXT:{{w
+OPENTEMPLATE
+TEXT:w
 PIPE
 TEXT:American Scientist
 CLOSETEMPLATE
 NEWLINE
-TEXT:|url=http://www.americanscientist.org/bookshelf/pub/do-i-see-what-you-see
-NEWLINE
-TEXT:|passage=Numerous experimental '''tests''' and other observations have been offered in favor of animal mind reading, and although many scientists are skeptical, others assert that humans are not the only species capable of representing what others do and don’t perceive and know.}}
+PIPE
+ATTRIBUTE:url
+EQUALS
+TEXT:http://www.americanscientist.org/bookshelf/pub/do-i-see-what-you-see\n
+PIPE
+ATTRIBUTE:passage
+EQUALS
+TEXT:Numerous experimental '''tests''' and other observations have been offered in favor of animal mind reading, and although many scientists are skeptical, others assert that humans are not the only species capable of representing what others do and don’t perceive and know.
+CLOSETEMPLATE
 NEWLINE
 LISTNUMBERED
 OPENTEMPLATE
@@ -2610,11 +2617,13 @@ TEXT:May-June
 PIPE
 ATTRIBUTE:author
 EQUALS
-TEXT:[http://www.americanscientist.org/authors/detail/charles-t-ambrose Charles T. Ambrose]\n
+OPENSQBR
+TEXT:http://www.americanscientist.org/authors/detail/charles-t-ambrose Charles T. Ambrose]\n
 PIPE
 ATTRIBUTE:title
 EQUALS
-TEXT:[http://www.americanscientist.org/issues/feature/2013/3/alzheimerrsquos-disease-the-great-morbidity-of-the-21st-century Alzheimer’s Disease]\n
+OPENSQBR
+TEXT:http://www.americanscientist.org/issues/feature/2013/3/alzheimerrsquos-disease-the-great-morbidity-of-the-21st-century Alzheimer’s Disease]\n
 PIPE
 ATTRIBUTE:volume
 EQUALS
@@ -2630,13 +2639,17 @@ TEXT:200
 PIPE
 ATTRIBUTE:magazine
 EQUALS
-TEXT:{{w
+OPENTEMPLATE
+TEXT:w
 PIPE
 TEXT:American Scientist
 CLOSETEMPLATE
 NEWLINE
-TEXT:|passage=Similar studies of rats have employed four different intracranial resorbable, slow sustained release systems&mdash;&nbsp;
-TEXT:[&hellip;]. Such a slow-release device containing angiogenic factors could be placed on the pia mater covering the cerebral cortex and '''tested''' in persons with senile dementia in long term studies.}}
+PIPE
+ATTRIBUTE:passage
+EQUALS
+TEXT:Similar studies of rats have employed four different intracranial resorbable, slow sustained release systems&mdash;&nbsp;[&hellip;]. Such a slow-release device containing angiogenic factors could be placed on the pia mater covering the cerebral cortex and '''tested''' in persons with senile dementia in long term studies.
+CLOSETEMPLATE
 NEWLINE
 LISTNUMBERED
 OPENTEMPLATE

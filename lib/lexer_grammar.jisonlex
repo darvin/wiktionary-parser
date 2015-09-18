@@ -13,16 +13,25 @@ yy.value = null;
 DEBUGLEX("STATE: ",YY_START);
 DEBUGLEX("TEXT: ",yytext);
 
+
+
 %}
 
-%s table list template
-%x comment link heading  templateargvalue templateargvalueQ templateargvalueAPO
+%s table list template templateargvalue
+%x comment link heading  templateargvalueQ  templateargvalueAPO
 
 %%
 
 "<!--"              { this.begin('comment'); DEBUGLEX("BEGINCOMMENT "); return 'BEGINCOMMENT'; }
 <comment>[^-][^-]*     { DEBUGLEX("TEXT COMMENT ", yytext); /*node*/ return 'TEXT'; }
 <comment>"-->"      { this.popState(); DEBUGLEX("ENDCOMMENT "); return 'ENDCOMMENT'; }
+
+\n                  { DEBUGLEX("NEWLINE\n"); return 'NEWLINE'; }
+^" "*\n             { DEBUGLEX("NEWLINE\n"); return 'NEWLINE'; }
+\r                  { /* ignore this one */ DEBUGLEX("<13> "); }
+
+^" "                { DEBUGLEX("PRELINE "); return 'PRELINE'; }
+
 
 "{|"" "*    { this.begin('table'); DEBUGLEX("TABLEBEGIN ");   yy.value = yyleng-2;       return 'TABLEBEGIN';    }
 <table>"||"" "*    { DEBUGLEX("TABLECELL1 (tablecell that starts with | is ommited");    yy.value = 2*(yyleng-2);   return 'TABLECELL';     }
@@ -39,6 +48,8 @@ DEBUGLEX("TEXT: ",yytext);
 <link>"]]"              { this.popState(); DEBUGLEX("CLOSEDBLSQBR "); return 'CLOSEDBLSQBR'; }
 <link>"|"                 { DEBUGLEX("PIPE "); return 'PIPE'; }
 
+"["     return 'OPENSQBR';
+"]"     return 'CLOSESQBR';
 
 
 "{{"                { this.begin('template'); DEBUGLEX("OPENTEMPLATE "); return 'OPENTEMPLATE'; }
@@ -47,6 +58,8 @@ DEBUGLEX("TEXT: ",yytext);
     DEBUGLEX("ATTRIBUTE(%s) ", yytext); 
     return 'ATTRIBUTE'; 
     }
+<templateargvalue>"|"   {this.popState(); return 'PIPE';}
+
 <template>"|"   {return 'PIPE';}
 <template>"="   { this.begin('templateargvalue');  return 'EQUALS';}
 
@@ -66,11 +79,6 @@ DEBUGLEX("TEXT: ",yytext);
 
 
 
-\n                  { DEBUGLEX("NEWLINE\n"); return 'NEWLINE'; }
-^" "*\n             { DEBUGLEX("NEWLINE\n"); return 'NEWLINE'; }
-\r                  { /* ignore this one */ DEBUGLEX("<13> "); }
-
-^" "                { DEBUGLEX("PRELINE "); return 'PRELINE'; }
 
 ^\*[ \t]*           { 
         if (YYSTATE!='list')
@@ -113,7 +121,5 @@ DEBUGLEX("TEXT: ",yytext);
 
 
 
-"["     return 'OPENSQBR';
-"]"     return 'CLOSESQBR';
 
 %%
