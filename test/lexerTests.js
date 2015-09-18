@@ -3,13 +3,9 @@ var expect = require('chai').expect;
 var wiktParser = require('../');
 var fs = require('fs');
 var path = require('path');
-/*todo important
-{{IPA|/tɛst/|lang=en}}
-{{audio|En-uk-a test.ogg|Audio (UK)|lang=en}}
 
 
-*/
-describe.only('wiktionary lexer lexes', function() {
+describe('wiktionary lexer lexes', function() {
   var MAX_SIZE = null;
   var l = null;
   var lexAll = function(txt) {
@@ -135,6 +131,34 @@ describe.only('wiktionary lexer lexes', function() {
   it('links', function() {
     expect(lexAll("[[lt:test]]")).deep.eql([ 'OPENDBLSQBR', 'TEXT:lt:test', 'CLOSEDBLSQBR' ]);
   });
+
+  it.only('templates with spaces', function() {
+    expect(lexAll("{{IPA|/tɛst/|lang=en}}")).deep.eql(
+      [ 'OPENTEMPLATE',
+        'TEXT:IPA',
+        'PIPE',
+        'TEXT:/tɛst/',
+        'PIPE',
+        'ATTRIBUTE:lang',
+        'EQUALS',
+        'TEXT:en',
+        'CLOSETEMPLATE' ]
+      );
+    expect(lexAll("{{audio|En-uk-a test.ogg|Audio (UK)|lang=en}}")).deep.eql(
+      [ 'OPENTEMPLATE',
+        'TEXT:audio',
+        'PIPE',
+        'TEXT:En-uk-a test.ogg',
+        'PIPE',
+        'TEXT:Audio (UK)',
+        'PIPE',
+        'ATTRIBUTE:lang',
+        'EQUALS',
+        'TEXT:en',
+        'CLOSETEMPLATE' ]
+      );
+  });
+
   it ('templates inside templates', function() {
     expect(lexAll("{{hyp3|title=Hyponyms of ''test''|{{l/en|acid test}}|some}}")).deep.eql([ 'OPENTEMPLATE',
       'TEXT:hyp3',
