@@ -26,7 +26,7 @@ describe.only('wiktionary lexer lexes', function() {
         if (last=="TEXT"||last=="ATTRIBUTE") {
           str += ":"+l.yytext;
         }
-        result.push(str);
+        result.push(str.replace("\n", "\\n"));
       }
         
       if (result.length>MAX_SIZE && MAX_SIZE){
@@ -88,20 +88,20 @@ describe.only('wiktionary lexer lexes', function() {
   it('template', function() {
     expect(lexAll("{{en-noun}}")).deep.eql(
       [ 'OPENTEMPLATE',
-        'ATTRIBUTE:en-noun',
+        'TEXT:en-noun',
         'CLOSETEMPLATE' ]
       );
     expect(lexAll("{{etyl|enm|en}} ")).deep.eql(
       [ 'OPENTEMPLATE',
-        'ATTRIBUTE:etyl',
+        'TEXT:etyl',
         'PIPE',
-        'ATTRIBUTE:enm',
+        'TEXT:enm',
         'PIPE',
-        'ATTRIBUTE:en',
+        'TEXT:en',
         'CLOSETEMPLATE',
         'PRELINE' ]);
     var exp1 = [ 'OPENTEMPLATE',
-        'ATTRIBUTE:etyl',
+        'TEXT:etyl',
         'PIPE',
         'ATTRIBUTE:lang',
         'EQUALS',
@@ -117,7 +117,7 @@ describe.only('wiktionary lexer lexes', function() {
     // expect(lexAll("{{etyl|lang=enm| langAnother= en}} ")).deep.eql(exp1);
     // expect(lexAll("{{ etyl |lang=enm| langAnother= en}} ")).deep.eql(exp1);
     expect(lexAll("{{etyl|lang=\"enm\"|langAnother=en}} ")).deep.eql([ 'OPENTEMPLATE',
-      'ATTRIBUTE:etyl',
+      'TEXT:etyl',
       'PIPE',
       'ATTRIBUTE:lang',
       'EQUALS',
@@ -130,17 +130,44 @@ describe.only('wiktionary lexer lexes', function() {
       'TEXT:en',
       'CLOSETEMPLATE',
       'PRELINE' ]);
-
   });
 
   it('links', function() {
     expect(lexAll("[[lt:test]]")).deep.eql([ 'OPENDBLSQBR', 'TEXT:lt:test', 'CLOSEDBLSQBR' ]);
   });
+  it ('templates inside templates', function() {
+    expect(lexAll("{{hyp3|title=Hyponyms of ''test''|{{l/en|acid test}}|some}}")).deep.eql([ 'OPENTEMPLATE',
+      'TEXT:hyp3',
+      'PIPE',
+      'ATTRIBUTE:title',
+      'EQUALS',
+      'TEXT:Hyponyms of \'\'test\'\'',
+      'PIPE',
+      'OPENTEMPLATE',
+      'TEXT:l/en',
+      'PIPE',
+      'TEXT:acid test',
+      'CLOSETEMPLATE',
+      'PIPE',
+      'TEXT:some',
+      'CLOSETEMPLATE' ]);
+
+  });
 
   it("'test' word article", function() {
+    var WRITE_EXPECTED_RESULTS = false;
     var wikitext = fs.readFileSync(path.join(__dirname,"fixtures", "test.wiki"), {encoding:'utf8'});
     var result = lexAll(wikitext);
-    fs.writeFileSync(path.join(__dirname,"fixtures","test.wiki.output.txt"), result.join("\n"), {encoding:'utf8'});
-    expect(result).deep.eql(null);
+    var resultFilePath = path.join(__dirname,"fixtures","test.wiki.output.txt");
+    if (WRITE_EXPECTED_RESULTS) {
+      var resultStr = result.join("\n");
+      fs.writeFileSync(resultFilePath, resultStr, {encoding:'utf8'});
+    } else {
+      var expectedResults = fs.readFileSync(resultFilePath, {encoding:'utf8'}).split("\n");
+      expect(result).deep.eql(expectedResults);
+    }
+
+
+
   });
 });

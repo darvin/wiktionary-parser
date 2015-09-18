@@ -15,8 +15,8 @@ DEBUGLEX("TEXT: ",yytext);
 
 %}
 
-%s table list
-%x comment link heading template templateargvalue templateargvalueQ templateargvalueAPO
+%s table list template
+%x comment link heading  templateargvalue templateargvalueQ templateargvalueAPO
 
 %%
 
@@ -42,9 +42,18 @@ DEBUGLEX("TEXT: ",yytext);
 
 
 "{{"                { this.begin('template'); DEBUGLEX("OPENTEMPLATE "); return 'OPENTEMPLATE'; }
-<template>[^=\}\|]+ { DEBUGLEX("ATTRIBUTE(%s) ", yytext); return 'ATTRIBUTE'; }
+<template>[^=\}\|]+"=" { 
+    this.less(yytext.length-1);
+    DEBUGLEX("ATTRIBUTE(%s) ", yytext); 
+    return 'ATTRIBUTE'; 
+    }
 <template>"|"   {return 'PIPE';}
 <template>"="   { this.begin('templateargvalue');  return 'EQUALS';}
+
+<template>[^=\}\|]+ {
+    DEBUGLEX("TEXT(%s) ", yytext); 
+    return 'TEXT'; 
+    }
 <templateargvalue>\"   { this.begin('templateargvalueQ');  return 'ATTRQ'; }
 <templateargvalueQ>\"   { this.popState();this.popState();  return 'ATTRQ'; }
 <templateargvalue>\'   { this.begin('templateargvalueAPO');  return 'ATTRAPO'; }
@@ -93,17 +102,18 @@ DEBUGLEX("TEXT: ",yytext);
 <heading>[^\n=]+"=" { this.less(yytext.length-1); DEBUGLEX("TEXT(%s) ", yytext);  return 'TEXT'; }
 
 
-^"="+                           {
+^"="+     {
         this.begin('heading');
         yy.value = yytext.length;
         DEBUGLEX("HEADING(%d) ", yy.value);
         return 'HEADING';
 }
 
-.+ { DEBUGLEX("TEXT(%s) ", yytext); return 'TEXT'; }
+^[^=]?[^\[\{\n]+ { DEBUGLEX("TEXT(%s) ", yytext); return 'TEXT'; }
 
 
 
-
+"["     return 'OPENSQBR';
+"]"     return 'CLOSESQBR';
 
 %%
