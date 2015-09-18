@@ -11,7 +11,8 @@
   },
   "PIPE",
   {
-    "txt": "țest"
+    "txt": "țest",
+    "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
@@ -46,16 +47,15 @@
   },
   "PIPE",
   {
-    "txt": "/tɛst/"
+    "txt": "/tɛst/",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "lang"
+    "txt": "lang",
+    "t": "ATTRIBUTE"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "en"
   },
@@ -69,24 +69,20 @@
   },
   "PIPE",
   {
-    "txt": "en-us-test",
+    "txt": "en-us-test.ogg",
     "t": "ATTRIBUTE"
   },
+  "PIPE",
   {
-    "txt": ".ogg"
+    "txt": "Audio (US)",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "Audio (US)"
+    "txt": "lang",
+    "t": "ATTRIBUTE"
   },
-  "PIPE",
-  {
-    "txt": "lang"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "en"
   },
@@ -100,28 +96,20 @@
   },
   "PIPE",
   {
-    "txt": "En-uk-a ",
+    "txt": "En-uk-a test.ogg",
     "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "test",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": ".ogg"
   },
   "PIPE",
   {
-    "txt": "Audio (UK)"
+    "txt": "Audio (UK)",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "lang"
+    "txt": "lang",
+    "t": "ATTRIBUTE"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "en"
   },
@@ -135,16 +123,15 @@
   },
   "PIPE",
   {
-    "txt": "ɛst"
+    "txt": "ɛst",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "lang"
+    "txt": "lang",
+    "t": "ATTRIBUTE"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "en"
   },
@@ -158,11 +145,7 @@
   },
   "PIPE",
   {
-    "txt": "South ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "African",
+    "txt": "South African",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
@@ -174,16 +157,15 @@
   },
   "PIPE",
   {
-    "txt": "/test/"
+    "txt": "/test/",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "lang"
+    "txt": "lang",
+    "t": "ATTRIBUTE"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "en"
   },
@@ -202,224 +184,7 @@
     "t": "ENDHEADING"
   },
   {
-    "txt": "From "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "etyl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "fro",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "en",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "term",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "test",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "lang",
-    "t": "ATTRIBUTE"
-  },
-  "EQUALS",
-  {
-    "txt": "fro"
-  },
-  "PIPE",
-  "PIPE",
-  {
-    "txt": "an ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "earthen ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "vessel",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": ", especially a pot in which metals were tried"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", from "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "etyl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "la",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "en",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "term",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "testum",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  "PIPE",
-  {
-    "txt": "the ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "lid ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "of ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "an ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "earthen ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "vessel",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": ", an earthen vessel, an earthen pot"
-  },
-  "PIPE",
-  {
-    "txt": "lang"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "la"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", from "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "m",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "la",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  "LISTBULLET",
-  {
-    "txt": "terstus"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", past participle of the root seen also in "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "term",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "terra",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  "PIPE",
-  {
-    "txt": "earth",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "lang",
-    "t": "ATTRIBUTE"
-  },
-  "EQUALS",
-  {
-    "txt": "la"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  {
-    "txt": "for "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "m",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "la",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  "LISTBULLET",
-  {
-    "txt": "tersa"
-  },
-  "PIPE",
-  "PIPE",
-  {
-    "txt": "dry land"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": "; see "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "terra"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": ", "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "thirst"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": "."
+    "txt": "From {{etyl|fro|en}} {{term|test|lang=fro||an earthen vessel, especially a pot in which metals were tried}}, from {{etyl|la|en}} {{term|testum||the lid of an earthen vessel, an earthen vessel, an earthen pot|lang=la}}, from {{m|la|*terstus}}, past participle of the root seen also in {{term|terra||earth|lang=la}} for {{m|la|*tersa||dry land}}; see [[terra]], [[thirst]]."
   },
   "NEWLINE",
   "NEWLINE",
@@ -444,41 +209,12 @@
   "NEWLINE",
   "LISTNUMBERED",
   {
-    "txt": "A "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "cupel"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "or cupelling hearth in which precious metals are melted for trial and refinement."
+    "txt": "A [[cupel]] or cupelling hearth in which precious metals are melted for trial and refinement."
   },
   "NEWLINE",
   "LISTNUMBERED",
   {
-    "txt": "A "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "challenge#Noun"
-  },
-  "PIPE",
-  {
-    "txt": "challenge"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": ", "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "trial"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": "."
+    "txt": "A [[challenge#Noun|challenge]], [[trial]]."
   },
   "NEWLINE",
   "LISTNUMBERED",
@@ -504,133 +240,76 @@
   },
   "EQUALS",
   {
-    "txt": "March-April"
+    "txt": "March-April\n"
   },
-  "NEWLINE",
   "PIPE",
   {
-    "txt": "author"
+    "txt": "author",
+    "t": "ATTRIBUTE"
   },
+  "EQUALS",
   {
-    "v": 1,
-    "t": "HEADING"
+    "txt": "Colin Allen\n"
   },
-  {
-    "txt": "Colin Allen"
-  },
-  "NEWLINE",
   "PIPE",
   {
-    "txt": "title"
+    "txt": "title",
+    "t": "ATTRIBUTE"
   },
+  "EQUALS",
   {
-    "v": 1,
-    "t": "HEADING"
+    "txt": "Do I See What You See?\n"
   },
-  {
-    "txt": "Do I See What You See?"
-  },
-  "NEWLINE",
   "PIPE",
   {
-    "txt": "volume"
+    "txt": "volume",
+    "t": "ATTRIBUTE"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "100"
   },
   "PIPE",
   {
-    "txt": "issue"
+    "txt": "issue",
+    "t": "ATTRIBUTE"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "2"
   },
   "PIPE",
   {
-    "txt": "page"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "168"
-  },
-  "NEWLINE",
-  "PIPE",
-  {
-    "txt": "magazine"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "w",
+    "txt": "page",
     "t": "ATTRIBUTE"
+  },
+  "EQUALS",
+  {
+    "txt": "168\n"
   },
   "PIPE",
   {
-    "txt": "American ",
+    "txt": "magazine",
     "t": "ATTRIBUTE"
   },
+  "EQUALS",
   {
-    "txt": "Scientist",
+    "txt": "{{w"
+  },
+  "PIPE",
+  {
+    "txt": "American Scientist",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
-  "PIPE",
   {
-    "txt": "url"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "http://www.americanscientist.org/bookshelf/pub/do-i-see-what-you-see"
+    "txt": "|url=http://www.americanscientist.org/bookshelf/pub/do-i-see-what-you-see"
   },
   "NEWLINE",
-  "PIPE",
   {
-    "txt": "passage"
+    "txt": "|passage=Numerous experimental '''tests''' and other observations have been offered in favor of animal mind reading, and although many scientists are skeptical, others assert that humans are not the only species capable of representing what others do and don’t perceive and know.}}"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Numerous experimental "
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'tests"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "' and other observations have been offered in favor of animal mind reading, and although many scientists are skeptical, others assert that humans are not the only species capable of representing what others do and don’t perceive and know."
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTNUMBERED",
   "OPENTEMPLATE",
@@ -655,62 +334,12 @@
   "CLOSETEMPLATE",
   "PRELINE",
   {
-    "txt": "An "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "examination"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": ", given often during the academic "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "term"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": "."
+    "txt": "An [[examination]], given often during the academic [[term]]."
   },
   "NEWLINE",
   "LISTNUMBERED",
   {
-    "txt": "A "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "session"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "in which a product or piece of equipment is "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "examine"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": "d under everyday or extreme conditions to "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "evaluate"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "its "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "durability"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": ", etc."
+    "txt": "A [[session]] in which a product or piece of equipment is [[examine]]d under everyday or extreme conditions to [[evaluate]] its [[durability]], etc."
   },
   "NEWLINE",
   "LISTNUMBERED",
@@ -726,58 +355,7 @@
   },
   "PIPE",
   {
-    "txt": "normally ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "“"
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "Test"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": "”"
-  },
-  "PIPE",
-  {
-    "txt": "lang"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "en"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  {
-    "txt": "A "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "Test match"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": "."
-  },
-  "NEWLINE",
-  "LISTNUMBERED",
-  "OPENTEMPLATE",
-  {
-    "txt": "context",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "marine ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "biology",
+    "txt": "normally “[[Test]]”",
     "t": "ATTRIBUTE"
   },
   "PIPE",
@@ -792,75 +370,34 @@
   "CLOSETEMPLATE",
   "PRELINE",
   {
-    "txt": "The external "
+    "txt": "A [[Test match]]."
   },
-  "OPENDBLSQBR",
+  "NEWLINE",
+  "LISTNUMBERED",
+  "OPENTEMPLATE",
   {
-    "txt": "calciferous"
+    "txt": "context",
+    "t": "ATTRIBUTE"
   },
-  "CLOSEDBLSQBR",
+  "PIPE",
+  {
+    "txt": "marine biology",
+    "t": "ATTRIBUTE"
+  },
+  "PIPE",
+  {
+    "txt": "lang",
+    "t": "ATTRIBUTE"
+  },
+  "EQUALS",
+  {
+    "txt": "en"
+  },
+  "CLOSETEMPLATE",
   "PRELINE",
   {
-    "txt": "shell, or "
+    "txt": "The external [[calciferous]] shell, or [[endoskeleton]], of an [[echinoderm]], e.g. [[sand dollar|sand dollars]] and [[sea urchin|sea urchins]].[[Image:Sea urchin tests.jpg|thumb|right|Two sea urchin tests]]"
   },
-  "OPENDBLSQBR",
-  {
-    "txt": "endoskeleton"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": ", of an "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "echinoderm"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": ", e.g. "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "sand dollar"
-  },
-  "PIPE",
-  {
-    "txt": "sand dollars"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "and "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "sea urchin"
-  },
-  "PIPE",
-  {
-    "txt": "sea urchins"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": "."
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "Image:Sea urchin tests.jpg"
-  },
-  "PIPE",
-  {
-    "txt": "thumb"
-  },
-  "PIPE",
-  {
-    "txt": "right"
-  },
-  "PIPE",
-  {
-    "txt": "Two sea urchin tests"
-  },
-  "CLOSEDBLSQBR",
   "NEWLINE",
   "LISTNUMBERED",
   "OPENTEMPLATE",
@@ -886,23 +423,11 @@
   "PRELINE",
   "OPENDBLSQBR",
   {
-    "txt": "testa"
-  },
-  "PIPE",
-  {
-    "txt": "Testa"
+    "txt": "testa|Testa"
   },
   "CLOSEDBLSQBR",
   {
-    "txt": "; "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "seed coat"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": "."
+    "txt": "; [[seed coat]]."
   },
   "NEWLINE",
   "LISTNUMBERED",
@@ -939,27 +464,9 @@
   "NEWLINE",
   "LISTNUMBERED",
   "LISTBULLET",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "Who would excel, when few can make a "
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'test"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "' / Betwixt indifferent writing and the best?"
+    "txt": "Who would excel, when few can make a '''test''' / Betwixt indifferent writing and the best?"
   },
   "NEWLINE",
   "NEWLINE",
@@ -993,13 +500,8 @@
   },
   "CLOSEDBLSQBR",
   {
-    "txt": ", "
+    "txt": ", [[trial]]"
   },
-  "OPENDBLSQBR",
-  {
-    "txt": "trial"
-  },
-  "CLOSEDBLSQBR",
   "NEWLINE",
   "LISTBULLET",
   "OPENTEMPLATE",
@@ -1025,13 +527,8 @@
   },
   "CLOSEDBLSQBR",
   {
-    "txt": ", "
+    "txt": ", [[examination]]"
   },
-  "OPENDBLSQBR",
-  {
-    "txt": "examination"
-  },
-  "CLOSEDBLSQBR",
   "NEWLINE",
   "NEWLINE",
   {
@@ -1102,246 +599,32 @@
   },
   "OPENTEMPLATE",
   {
-    "txt": "hyp",
+    "txt": "hyp3",
     "t": "ATTRIBUTE"
   },
-  {
-    "txt": "3"
-  },
   "PIPE",
   {
-    "txt": "title"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Hyponyms of "
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'test"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  "PIPE",
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
+    "txt": "title",
     "t": "ATTRIBUTE"
   },
+  "EQUALS",
   {
-    "txt": "/en"
+    "txt": "Hyponyms of ''test''"
   },
   "PIPE",
   {
-    "txt": "acid test"
-  },
-  "CLOSETEMPLATE",
-  "PIPE",
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
+    "txt": "{{l/en",
     "t": "ATTRIBUTE"
   },
-  {
-    "txt": "/en"
-  },
   "PIPE",
   {
-    "txt": "babysitter test"
-  },
-  "CLOSETEMPLATE",
-  "PIPE",
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
+    "txt": "acid test",
     "t": "ATTRIBUTE"
   },
-  {
-    "txt": "/en"
-  },
-  "PIPE",
-  {
-    "txt": "blood test"
-  },
   "CLOSETEMPLATE",
-  "PIPE",
-  "OPENTEMPLATE",
   {
-    "txt": "l",
-    "t": "ATTRIBUTE"
+    "txt": "|{{l/en|babysitter test}}|{{l/en|blood test}}|{{l/en|duck test}}|{{l/en|flame test}}|{{l/en|inkblot test}}|{{l/en|litmus test}}|{{l/en|multiple-choice test}}|{{l/en|nose test}}|{{l/en|Rorschach test}}|{{l/en|single-choice test}}|{{l/en|smell test}}|{{l/en|smoke test}}|{{l/en|sniff test}}|{{l/en|stress test}}}}"
   },
-  {
-    "txt": "/en"
-  },
-  "PIPE",
-  {
-    "txt": "duck test"
-  },
-  "CLOSETEMPLATE",
-  "PIPE",
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "/en"
-  },
-  "PIPE",
-  {
-    "txt": "flame test"
-  },
-  "CLOSETEMPLATE",
-  "PIPE",
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "/en"
-  },
-  "PIPE",
-  {
-    "txt": "inkblot test"
-  },
-  "CLOSETEMPLATE",
-  "PIPE",
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "/en"
-  },
-  "PIPE",
-  {
-    "txt": "litmus test"
-  },
-  "CLOSETEMPLATE",
-  "PIPE",
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "/en"
-  },
-  "PIPE",
-  {
-    "txt": "multiple-choice test"
-  },
-  "CLOSETEMPLATE",
-  "PIPE",
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "/en"
-  },
-  "PIPE",
-  {
-    "txt": "nose test"
-  },
-  "CLOSETEMPLATE",
-  "PIPE",
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "/en"
-  },
-  "PIPE",
-  {
-    "txt": "Rorschach test"
-  },
-  "CLOSETEMPLATE",
-  "PIPE",
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "/en"
-  },
-  "PIPE",
-  {
-    "txt": "single-choice test"
-  },
-  "CLOSETEMPLATE",
-  "PIPE",
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "/en"
-  },
-  "PIPE",
-  {
-    "txt": "smell test"
-  },
-  "CLOSETEMPLATE",
-  "PIPE",
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "/en"
-  },
-  "PIPE",
-  {
-    "txt": "smoke test"
-  },
-  "CLOSETEMPLATE",
-  "PIPE",
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "/en"
-  },
-  "PIPE",
-  {
-    "txt": "sniff test"
-  },
-  "CLOSETEMPLATE",
-  "PIPE",
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "/en"
-  },
-  "PIPE",
-  {
-    "txt": "stress test"
-  },
-  "CLOSETEMPLATE",
-  "CLOSETEMPLATE",
   "NEWLINE",
   "NEWLINE",
   {
@@ -1358,15 +641,13 @@
   "LISTBULLET",
   "OPENTEMPLATE",
   {
-    "txt": "l",
+    "txt": "l/en",
     "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "/en"
   },
   "PIPE",
   {
-    "txt": "tester"
+    "txt": "tester",
+    "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
@@ -1395,11 +676,7 @@
   },
   "PIPE",
   {
-    "txt": "test ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "case",
+    "txt": "test case",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
@@ -1417,11 +694,7 @@
   },
   "PIPE",
   {
-    "txt": "test ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "drive",
+    "txt": "test drive",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
@@ -1439,11 +712,7 @@
   },
   "PIPE",
   {
-    "txt": "test ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "flight",
+    "txt": "test flight",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
@@ -1461,11 +730,7 @@
   },
   "PIPE",
   {
-    "txt": "test ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "run",
+    "txt": "test run",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
@@ -1483,11 +748,7 @@
   },
   "PIPE",
   {
-    "txt": "test ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "tube",
+    "txt": "test tube",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
@@ -1506,45 +767,13 @@
   },
   "LISTBULLET",
   {
-    "txt": "German: "
+    "txt": "German: {{l|de|Test}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "de",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "Test",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Dutch: "
+    "txt": "Dutch: {{l|de|test}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "de",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "test",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "NEWLINE",
   {
@@ -1565,130 +794,25 @@
   },
   "PIPE",
   {
-    "txt": "challenge",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": ", trial"
-  },
-  "CLOSETEMPLATE",
-  "NEWLINE",
-  "LISTBULLET",
-  {
-    "txt": "Albanian: "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sq",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "prov",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "ë"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "qualifier",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "indefinite",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sq",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "prova",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "qualifier",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "definite",
+    "txt": "challenge, trial",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Arabic: "
+    "txt": "Albanian: {{t|sq|provë}} {{qualifier|indefinite}}, {{t|sq|prova}} {{qualifier|definite}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ar",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "اِخْتِبَار"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Asturian: "
+    "txt": "Arabic: {{t|ar|اِخْتِبَار|m}}"
   },
-  "OPENTEMPLATE",
+  "NEWLINE",
+  "LISTBULLET",
   {
-    "txt": "t",
-    "t": "ATTRIBUTE"
+    "txt": "Asturian: {{t|ast|prueba|f}}"
   },
-  "PIPE",
-  {
-    "txt": "ast",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "prueba",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "f",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
@@ -1696,585 +820,75 @@
   },
   "NEWLINE",
   "LISTBULLET",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "Mandarin: "
+    "txt": "Mandarin: {{t|cmn|試驗|sc=Hani}}, {{t+|cmn|试验|tr=shìyàn|sc=Hani}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "cmn",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "試驗"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Hani"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "cmn"
-  },
-  "PIPE",
-  {
-    "txt": "试验"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "shìyàn"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Hani"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Czech: "
+    "txt": "Czech: {{t+|cs|test|m}}, {{t+|cs|zkouška|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "cs"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "cs"
-  },
-  "PIPE",
-  {
-    "txt": "zkouška"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Dutch: "
+    "txt": "Dutch: {{t+|nl|test|m}}, {{t+|nl|proef|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "nl"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "nl"
-  },
-  "PIPE",
-  {
-    "txt": "proef"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Finnish: "
+    "txt": "Finnish: {{t+|fi|koe}}, {{t|fi|koetus}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fi"
-  },
-  "PIPE",
-  {
-    "txt": "koe"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "fi",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "koetus",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "French: "
+    "txt": "French: {{t+|fr|épreuve|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fr"
-  },
-  "PIPE",
-  {
-    "txt": "épreuve"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Friulian: "
+    "txt": "Friulian: {{t|fur|prove|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "fur",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "prove",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "f",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "German: "
+    "txt": "German: {{t+|de|Probe|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "de"
-  },
-  "PIPE",
-  {
-    "txt": "Probe"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Greek: "
+    "txt": "Greek: {{t+|el|δοκιμασία|f}}, {{t+|el|δοκιμή|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "el"
-  },
-  "PIPE",
-  {
-    "txt": "δοκιμασία"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "el"
-  },
-  "PIPE",
-  {
-    "txt": "δοκιμή"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Hebrew: "
+    "txt": "Hebrew: {{t+|he|מבחן|sc=Hebr}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "he"
-  },
-  "PIPE",
-  {
-    "txt": "מבחן"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Hebr"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Hindi: "
+    "txt": "Hindi: {{t|hi|चुनौती|f|sc=Deva}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "hi",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "चुनौती"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Deva"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Hungarian: "
+    "txt": "Hungarian: {{t+|hu|próba}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "hu"
-  },
-  "PIPE",
-  {
-    "txt": "próba"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Italian: "
+    "txt": "Italian: {{t+|it|prova}}, {{t+|it|verifica}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "it"
-  },
-  "PIPE",
-  {
-    "txt": "prova"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "it"
-  },
-  "PIPE",
-  {
-    "txt": "verifica"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Japanese: "
+    "txt": "Japanese: {{t+|ja|実験|tr=じっけん, jikken}}, {{t|ja|試練|tr=shiren|sc=Jpan}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ja"
-  },
-  "PIPE",
-  {
-    "txt": "実験"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "じっけん, jikken"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ja",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "試練"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "shiren"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Jpan"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Korean: "
+    "txt": "Korean: {{t+|ko|검사|sc=Hang}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ko"
-  },
-  "PIPE",
-  {
-    "txt": "검사"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Hang"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -2285,355 +899,43 @@
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Ladin: "
+    "txt": "Ladin: {{t|lld|proa|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "lld",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "proa",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "f",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Luxembourgish: "
+    "txt": "Luxembourgish: {{t|lb|Prouf|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "lb",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "Prouf",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "f",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Persian: "
+    "txt": "Persian: {{t+|fa|آزمایش|tr=âzmâyesh}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fa"
-  },
-  "PIPE",
-  {
-    "txt": "آزمایش"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "âzmâyesh"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Portuguese: "
+    "txt": "Portuguese: {{t+|pt|prova|f}}, {{t+|pt|teste}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "pt"
-  },
-  "PIPE",
-  {
-    "txt": "prova"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "pt"
-  },
-  "PIPE",
-  {
-    "txt": "teste"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Romanian: "
+    "txt": "Romanian: {{t+|ro|probă}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ro"
-  },
-  "PIPE",
-  {
-    "txt": "probă"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Russian: "
+    "txt": "Russian: {{t+|ru|про́ба|f}}, {{t+|ru|тест|m|tr=tɛst}}, {{t+|ru|испыта́ние|n}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ru"
-  },
-  "PIPE",
-  {
-    "txt": "про́ба"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ru"
-  },
-  "PIPE",
-  {
-    "txt": "тест"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "tɛst"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ru"
-  },
-  "PIPE",
-  {
-    "txt": "испыта́ние"
-  },
-  "PIPE",
-  {
-    "txt": "n"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Sardinian: "
+    "txt": "Sardinian: {{t|sc|proa|f}}, {{t|sc|proba}}, {{t|sc|prova}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sc",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "proa",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "f",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sc",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "proba",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sc",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "prova",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Scottish Gaelic: "
+    "txt": "Scottish Gaelic: {{t|gd|dearbhadh|m}}, {{t|gd|feuchainn|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "gd",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "dearbhadh",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "m",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "gd",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "feuchainn",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "f",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
@@ -2641,327 +943,56 @@
   },
   "NEWLINE",
   "LISTBULLET",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "Cyrillic: "
+    "txt": "Cyrillic: {{t|sh|тест|m|sc=Cyrl}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sh",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "тест"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Cyrl"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "Roman: "
+    "txt": "Roman: {{t+|sh|test|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sh"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Sicilian: "
+    "txt": "Sicilian: {{t|scn|prova|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "scn",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "prova",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "f",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Slovene: "
+    "txt": "Slovene: {{t|sl|preizkus|m}}, {{t|sl|preizkušnja|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "preizkus",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "m",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "preizku",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "šnja"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Spanish: "
+    "txt": "Spanish: {{t+|es|prueba|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "es"
-  },
-  "PIPE",
-  {
-    "txt": "prueba"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Swahili: "
+    "txt": "Swahili: {{t+|sw|jaribio}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sw"
-  },
-  "PIPE",
-  {
-    "txt": "jaribio"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Swedish: "
+    "txt": "Swedish: {{t+|sv|prov|n}}, {{t+|sv|prövning|c}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sv"
-  },
-  "PIPE",
-  {
-    "txt": "prov"
-  },
-  "PIPE",
-  {
-    "txt": "n"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sv"
-  },
-  "PIPE",
-  {
-    "txt": "prövning"
-  },
-  "PIPE",
-  {
-    "txt": "c"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Turkish: "
+    "txt": "Turkish: {{t+|tr|test}}, {{t+|tr|deneme}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  "PIPE",
-  {
-    "txt": "deneme"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Venetian: "
+    "txt": "Venetian: {{t|vec|prova|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "vec",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "prova",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "f",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Zulu: "
+    "txt": "Zulu: {{t-needed|zu}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t-needed",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "zu",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -2978,126 +1009,20 @@
   },
   "PIPE",
   {
-    "txt": "academics: ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "examination",
+    "txt": "academics: examination",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Albanian: "
+    "txt": "Albanian: {{t|sq|provim}} {{qualifier|indefinite}}, {{t|sq|provimi}} {{qualifier|definite}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sq",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "provim",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "qualifier",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "indefinite",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sq",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "provimi",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "qualifier",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "definite",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Arabic: "
+    "txt": "Arabic: {{t+|ar|اِمْتِحَان|m}}, {{t|ar|اِخْتِبَار|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ar"
-  },
-  "PIPE",
-  {
-    "txt": "اِمْتِحَان"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ar",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "اِخْتِبَار"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
@@ -3105,656 +1030,80 @@
   },
   "NEWLINE",
   "LISTBULLET",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "Mandarin: "
+    "txt": "Mandarin: {{t+|cmn|考試|sc=Hani}}, {{t+|cmn|考试|tr=kǎoshì|sc=Hani}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "cmn"
-  },
-  "PIPE",
-  {
-    "txt": "考試"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Hani"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "cmn"
-  },
-  "PIPE",
-  {
-    "txt": "考试"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "kǎoshì"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Hani"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Czech: "
+    "txt": "Czech: {{t+|cs|zkouška|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "cs"
-  },
-  "PIPE",
-  {
-    "txt": "zkouška"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Dutch: "
+    "txt": "Dutch: {{t+|nl|examen|n}}, {{t+|nl|test|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "nl"
-  },
-  "PIPE",
-  {
-    "txt": "examen"
-  },
-  "PIPE",
-  {
-    "txt": "n"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "nl"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Esperanto: "
+    "txt": "Esperanto: {{t|eo|ekzameno}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "eo",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ekzameno",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Finnish: "
+    "txt": "Finnish: {{t+|fi|koe}}, {{t+|fi|tentti}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fi"
-  },
-  "PIPE",
-  {
-    "txt": "koe"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fi"
-  },
-  "PIPE",
-  {
-    "txt": "tentti"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "French: "
+    "txt": "French: {{t+|fr|test|m}}, {{t+|fr|examen|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fr"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fr"
-  },
-  "PIPE",
-  {
-    "txt": "examen"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "German: "
+    "txt": "German: {{t+|de|Examen|n}}, {{t+|de|Prüfung|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "de"
-  },
-  "PIPE",
-  {
-    "txt": "Examen"
-  },
-  "PIPE",
-  {
-    "txt": "n"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "de"
-  },
-  "PIPE",
-  {
-    "txt": "Prüfung"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Greek: "
+    "txt": "Greek: {{t+|el|διαγώνισμα|n}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "el"
-  },
-  "PIPE",
-  {
-    "txt": "διαγώνισμα"
-  },
-  "PIPE",
-  {
-    "txt": "n"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Hebrew: "
+    "txt": "Hebrew: {{t+|he|מבחן|sc=Hebr}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "he"
-  },
-  "PIPE",
-  {
-    "txt": "מבחן"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Hebr"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Hindi: "
+    "txt": "Hindi: {{t|hi|परीक्षा|tr=parīkṣā}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "hi",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "परीक्षा"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "parīkṣā"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Hungarian: "
+    "txt": "Hungarian: {{t+|hu|vizsga}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "hu"
-  },
-  "PIPE",
-  {
-    "txt": "vizsga"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Irish: "
+    "txt": "Irish: {{t|ga|scrúdú|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ga",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "scr",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "údú"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Italian: "
+    "txt": "Italian: {{t+|it|esame|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "it"
-  },
-  "PIPE",
-  {
-    "txt": "esame"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Japanese: "
+    "txt": "Japanese: {{t+|ja|試験|tr=しけん, shiken}}, {{t+|ja|テスト|tr=tesuto|sc=Jpan}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ja"
-  },
-  "PIPE",
-  {
-    "txt": "試験"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "しけん, shiken"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ja"
-  },
-  "PIPE",
-  {
-    "txt": "テスト"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "tesuto"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Jpan"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Korean: "
+    "txt": "Korean: {{t+|ko|시험|sc=Hang}} ({{t+|ko|試驗|sc=Hani}}), {{t+|ko|테스트|sc=Kore}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ko"
-  },
-  "PIPE",
-  {
-    "txt": "시험"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Hang"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  {
-    "txt": "("
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ko"
-  },
-  "PIPE",
-  {
-    "txt": "試驗"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Hani"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": "), "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ko"
-  },
-  "PIPE",
-  {
-    "txt": "테스트"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Kore"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
@@ -3762,36 +1111,10 @@
   },
   "NEWLINE",
   "LISTBULLET",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "Sorani: "
+    "txt": "Sorani: {{t|ckb|تاقیکردنه‌وه‌|sc=ku-Arab}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ckb",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "تاقیکردنه‌وه‌"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "ku-Arab"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -3802,322 +1125,38 @@
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Malay: "
+    "txt": "Malay: {{t|ms|ujian}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ms",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ujian",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Persian: "
+    "txt": "Persian: {{t+|fa|آزمایش|tr=âzmâyesh}}, {{t+|fa|تست|tr=test|sc=fa-Arab}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fa"
-  },
-  "PIPE",
-  {
-    "txt": "آزمایش"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "âzmâyesh"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fa"
-  },
-  "PIPE",
-  {
-    "txt": "تست"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "test"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "fa-Arab"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Polish: "
+    "txt": "Polish: {{t+|pl|sprawdzian|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "pl"
-  },
-  "PIPE",
-  {
-    "txt": "sprawdzian"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Portuguese: "
+    "txt": "Portuguese: {{t+|pt|exame|m}}, {{t+|pt|teste|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "pt"
-  },
-  "PIPE",
-  {
-    "txt": "exame"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "pt"
-  },
-  "PIPE",
-  {
-    "txt": "teste"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Romanian: "
+    "txt": "Romanian: {{t+|ro|examen}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ro"
-  },
-  "PIPE",
-  {
-    "txt": "examen"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Russian: "
+    "txt": "Russian: {{t+|ru|экза́мен|m}}, {{t+|ru|тест|m|tr=tɛst}}, {{t|ru|контро́льная рабо́та|f}} {{qualifier|control work}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ru"
-  },
-  "PIPE",
-  {
-    "txt": "экза́мен"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ru"
-  },
-  "PIPE",
-  {
-    "txt": "тест"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "tɛst"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ru",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "контро́льная рабо́та"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "qualifier",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "control ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "work",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Scottish Gaelic: "
+    "txt": "Scottish Gaelic: {{t|gd|feuchainn|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "gd",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "feuchainn",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "f",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
@@ -4125,471 +1164,66 @@
   },
   "NEWLINE",
   "LISTBULLET",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "Cyrillic: "
+    "txt": "Cyrillic: {{t|sh|тест|m|sc=Cyrl}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sh",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "тест"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Cyrl"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "Roman: "
+    "txt": "Roman: {{t+|sh|test|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sh"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Sicilian: "
+    "txt": "Sicilian: {{t+|scn|esami|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "scn"
-  },
-  "PIPE",
-  {
-    "txt": "esami"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Slovene: "
+    "txt": "Slovene: {{t|sl|test|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "test",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "m",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Spanish: "
+    "txt": "Spanish: {{t+|es|examen|m}}, {{t+|es|test|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "es"
-  },
-  "PIPE",
-  {
-    "txt": "examen"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "es"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Swahili: "
+    "txt": "Swahili: {{t+|sw|jaribio}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sw"
-  },
-  "PIPE",
-  {
-    "txt": "jaribio"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Swedish: "
+    "txt": "Swedish: {{t+|sv|prov|n}}, {{t+|sv|tentamen|c}}, {{t+|sv|tenta|c}}, {{t+|sv|dugga|c}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sv"
-  },
-  "PIPE",
-  {
-    "txt": "prov"
-  },
-  "PIPE",
-  {
-    "txt": "n"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sv"
-  },
-  "PIPE",
-  {
-    "txt": "tentamen"
-  },
-  "PIPE",
-  {
-    "txt": "c"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sv"
-  },
-  "PIPE",
-  {
-    "txt": "tenta"
-  },
-  "PIPE",
-  {
-    "txt": "c"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sv"
-  },
-  "PIPE",
-  {
-    "txt": "dugga"
-  },
-  "PIPE",
-  {
-    "txt": "c"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Tagalog: "
+    "txt": "Tagalog: {{t|tl|pagsusulit}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "tl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "pagsusulit",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Telugu: "
+    "txt": "Telugu: {{t+|te|పరీక్ష|tr=pareeksha|sc=Telu}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "te"
-  },
-  "PIPE",
-  {
-    "txt": "పరీక్ష"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "pareeksha"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Telu"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Thai: "
+    "txt": "Thai: {{t+|th|สอบ|tr=sòp}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "th"
-  },
-  "PIPE",
-  {
-    "txt": "สอบ"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "sòp"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Turkish: "
+    "txt": "Turkish: {{t+|tr|sınav}}, {{t+|tr|test}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  "PIPE",
-  {
-    "txt": "sınav"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Vietnamese: "
+    "txt": "Vietnamese: {{t+|vi|thi}}, {{t+|vi|kiểm tra}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "vi"
-  },
-  "PIPE",
-  {
-    "txt": "thi"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "vi"
-  },
-  "PIPE",
-  {
-    "txt": "kiểm tra"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -4606,11 +1240,7 @@
   },
   "PIPE",
   {
-    "txt": "product ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "examination",
+    "txt": "product examination",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
@@ -4621,557 +1251,65 @@
   },
   "NEWLINE",
   "LISTBULLET",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "Mandarin: "
+    "txt": "Mandarin: {{t+|cmn|測試|sc=Hani}}, {{t+|cmn|测试|tr=cèshì|sc=Hani}}, {{t+|cmn|檢查|sc=Hani}}, {{t+|cmn|检查|tr=jiǎnchá|sc=Hani}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "cmn"
-  },
-  "PIPE",
-  {
-    "txt": "測試"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Hani"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "cmn"
-  },
-  "PIPE",
-  {
-    "txt": "测试"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "cèshì"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Hani"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "cmn"
-  },
-  "PIPE",
-  {
-    "txt": "檢查"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Hani"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "cmn"
-  },
-  "PIPE",
-  {
-    "txt": "检查"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "jiǎnchá"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Hani"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Czech: "
+    "txt": "Czech: {{t+|cs|test|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "cs"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Dutch: "
+    "txt": "Dutch: {{t+|nl|test|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "nl"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Finnish: "
+    "txt": "Finnish: {{t+|fi|testi}}, {{t|fi|käyttökoe}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fi"
-  },
-  "PIPE",
-  {
-    "txt": "testi"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "fi",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "k",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "äyttökoe"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "French: "
+    "txt": "French: {{t+|fr|test|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fr"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "German: "
+    "txt": "German: {{t+|de|Test}}, {{t+|de|Prüfung|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "de"
-  },
-  "PIPE",
-  {
-    "txt": "Test"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "de"
-  },
-  "PIPE",
-  {
-    "txt": "Prüfung"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Greek: "
+    "txt": "Greek: {{t+|el|εξέταση|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "el"
-  },
-  "PIPE",
-  {
-    "txt": "εξέταση"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Hungarian: "
+    "txt": "Hungarian: {{t+|hu|teszt}}, {{t+|hu|vizsgálat}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "hu"
-  },
-  "PIPE",
-  {
-    "txt": "teszt"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "hu"
-  },
-  "PIPE",
-  {
-    "txt": "vizsgálat"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Irish: "
+    "txt": "Irish: {{t|ga|tástáil|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ga",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "ástáil"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Japanese: "
+    "txt": "Japanese: {{t+|ja|検査|tr=kensa|sc=Jpan}}, {{t+|ja|テスト|tr=tesuto|sc=Jpan}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ja"
-  },
-  "PIPE",
-  {
-    "txt": "検査"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "kensa"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Jpan"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ja"
-  },
-  "PIPE",
-  {
-    "txt": "テスト"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "tesuto"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Jpan"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Korean: "
+    "txt": "Korean: {{t+|ko|테스트|sc=Kore}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ko"
-  },
-  "PIPE",
-  {
-    "txt": "테스트"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Kore"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Malay: "
+    "txt": "Malay: {{t|ms|ujian}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ms",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ujian",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -5182,232 +1320,28 @@
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Polish: "
+    "txt": "Polish: {{t+|pl|sprawdzian|m}}, {{t+|pl|test|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "pl"
-  },
-  "PIPE",
-  {
-    "txt": "sprawdzian"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "pl"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Portuguese: "
+    "txt": "Portuguese: {{t+|pt|teste|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "pt"
-  },
-  "PIPE",
-  {
-    "txt": "teste"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Romanian: "
+    "txt": "Romanian: {{t+|ro|probă}}, {{t+|ro|test}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ro"
-  },
-  "PIPE",
-  {
-    "txt": "probă"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ro"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Russian: "
+    "txt": "Russian: {{t+|ru|тест|m|tr=tɛst}}, {{t+|ru|испыта́ние|n}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ru"
-  },
-  "PIPE",
-  {
-    "txt": "тест"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "tɛst"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ru"
-  },
-  "PIPE",
-  {
-    "txt": "испыта́ние"
-  },
-  "PIPE",
-  {
-    "txt": "n"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Scottish Gaelic: "
+    "txt": "Scottish Gaelic: {{t|gd|dearbhadh|m}}, {{t|gd|feuchainn|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "gd",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "dearbhadh",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "m",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "gd",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "feuchainn",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "f",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
@@ -5415,283 +1349,41 @@
   },
   "NEWLINE",
   "LISTBULLET",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "Cyrillic: "
+    "txt": "Cyrillic: {{t|sh|тест|m|sc=Cyrl}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sh",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "тест"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Cyrl"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "Roman: "
+    "txt": "Roman: {{t+|sh|test|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sh"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Slovene: "
+    "txt": "Slovene: {{t|sl|test|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "test",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "m",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Spanish: "
+    "txt": "Spanish: {{t+|es|prueba|f}}, {{t+|es|test|m}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "es"
-  },
-  "PIPE",
-  {
-    "txt": "prueba"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "es"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "PIPE",
-  {
-    "txt": "m"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Swahili: "
+    "txt": "Swahili: {{t+|sw|jaribio}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sw"
-  },
-  "PIPE",
-  {
-    "txt": "jaribio"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Swedish: "
+    "txt": "Swedish: {{t+|sv|test|n}}, {{t|sv|provning|c}}, {{t+|sv|prov|c}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sv"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "PIPE",
-  {
-    "txt": "n"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sv",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "provning",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "c",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sv"
-  },
-  "PIPE",
-  {
-    "txt": "prov"
-  },
-  "PIPE",
-  {
-    "txt": "c"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Telugu: "
+    "txt": "Telugu: {{t+|te|పరీక్ష|tr=pareeksha|sc=Telu}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "te"
-  },
-  "PIPE",
-  {
-    "txt": "పరీక్ష"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "pareeksha"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Telu"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -5708,60 +1400,15 @@
   },
   "PIPE",
   {
-    "txt": "cricket: ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "test ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "game",
+    "txt": "cricket: test game",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Swahili: "
+    "txt": "Swahili: {{t+|sw|jaribio}}, {{t+|sw|majaribio}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sw"
-  },
-  "PIPE",
-  {
-    "txt": "jaribio"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sw"
-  },
-  "PIPE",
-  {
-    "txt": "majaribio"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -5785,40 +1432,15 @@
   },
   "PIPE",
   {
-    "txt": "external ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "calciferous ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "shell",
+    "txt": "external calciferous shell",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Finnish: "
+    "txt": "Finnish: {{t+|fi|kuori}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fi"
-  },
-  "PIPE",
-  {
-    "txt": "kuori"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -5829,25 +1451,8 @@
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Swahili: "
+    "txt": "Swahili: {{t+|sw|majaribio}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sw"
-  },
-  "PIPE",
-  {
-    "txt": "majaribio"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -5878,91 +1483,18 @@
   "NEWLINE",
   "LISTNUMBERED",
   {
-    "txt": "To "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "refine"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "(gold, silver, etc.) in a "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "test"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "or "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "cupel"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": "; to subject to "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "cupellation"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": "."
+    "txt": "To [[refine]] (gold, silver, etc.) in a [[test]] or [[cupel]]; to subject to [[cupellation]]."
   },
   "NEWLINE",
   "LISTNUMBERED",
   {
-    "txt": "To "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "challenge#Verb"
-  },
-  "PIPE",
-  {
-    "txt": "challenge"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": "."
+    "txt": "To [[challenge#Verb|challenge]]."
   },
   "NEWLINE",
   "LISTNUMBERED",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "'"
-  },
-  {
-    "txt": "'Climbing the mountain "
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'tested"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "' our stamina."
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
+    "txt": "''Climbing the mountain '''tested''' our stamina.''"
   },
   "NEWLINE",
   "LISTNUMBERED",
@@ -5971,54 +1503,9 @@
   },
   "NEWLINE",
   "LISTNUMBERED",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "'"
-  },
-  {
-    "txt": "'to "
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'test"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "' the soundness of a principle; to "
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'test"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "' the validity of an argument"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
+    "txt": "''to '''test''' the soundness of a principle; to '''test''' the validity of an argument''"
   },
   "NEWLINE",
   "LISTNUMBERED",
@@ -6029,27 +1516,9 @@
   "NEWLINE",
   "LISTNUMBERED",
   "LISTBULLET",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "Experience is the surest standard by which to "
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'test"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "' the real tendency of the existing constitution."
+    "txt": "Experience is the surest standard by which to '''test''' the real tendency of the existing constitution."
   },
   "NEWLINE",
   "LISTNUMBERED",
@@ -6115,131 +1584,63 @@
   },
   "EQUALS",
   {
-    "txt": "[http://www.americanscientist.org/authors/detail/charles-t-ambrose "
+    "txt": "[http://www.americanscientist.org/authors/detail/charles-t-ambrose Charles T. Ambrose]\n"
   },
-  {
-    "txt": "Charles ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "T",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": ". Ambrose"
-  },
-  {
-    "txt": "]"
-  },
-  "NEWLINE",
   "PIPE",
   {
-    "txt": "title"
+    "txt": "title",
+    "t": "ATTRIBUTE"
   },
+  "EQUALS",
   {
-    "v": 1,
-    "t": "HEADING"
+    "txt": "[http://www.americanscientist.org/issues/feature/2013/3/alzheimerrsquos-disease-the-great-morbidity-of-the-21st-century Alzheimer’s Disease]\n"
   },
-  {
-    "txt": "[http://www.americanscientist.org/issues/feature/2013/3/alzheimerrsquos-disease-the-great-morbidity-of-the-21st-century Alzheimer’s Disease"
-  },
-  {
-    "txt": "]"
-  },
-  "NEWLINE",
   "PIPE",
   {
-    "txt": "volume"
+    "txt": "volume",
+    "t": "ATTRIBUTE"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "101"
   },
   "PIPE",
   {
-    "txt": "issue"
+    "txt": "issue",
+    "t": "ATTRIBUTE"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "3"
   },
   "PIPE",
   {
-    "txt": "page"
+    "txt": "page",
+    "t": "ATTRIBUTE"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "200"
   },
   "PIPE",
   {
-    "txt": "magazine"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "w",
+    "txt": "magazine",
     "t": "ATTRIBUTE"
+  },
+  "EQUALS",
+  {
+    "txt": "{{w"
   },
   "PIPE",
   {
-    "txt": "American ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "Scientist",
+    "txt": "American Scientist",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
-  "PIPE",
   {
-    "txt": "passage"
+    "txt": "|passage=Similar studies of rats have employed four different intracranial resorbable, slow sustained release systems&mdash;&nbsp;[&hellip;]. Such a slow-release device containing angiogenic factors could be placed on the pia mater covering the cerebral cortex and '''tested''' in persons with senile dementia in long term studies.}}"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Similar studies of rats have employed four different intracranial resorbable, slow sustained release systems&mdash;&nbsp;"
-  },
-  {
-    "txt": "[&hellip;"
-  },
-  {
-    "txt": "]. Such a slow-release device containing angiogenic factors could be placed on the pia mater covering the cerebral cortex and "
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'tested"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "' in persons with senile dementia in long term studies."
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTNUMBERED",
   "OPENTEMPLATE",
@@ -6268,7 +1669,7 @@
   },
   "NEWLINE",
   "LISTNUMBERED",
-  "LISTDEFINITION",
+  "LISTIDENT",
   "OPENTEMPLATE",
   {
     "txt": "usex",
@@ -6276,35 +1677,15 @@
   },
   "PIPE",
   {
-    "txt": "He ",
+    "txt": "He '''tested''' positive for cancer.",
     "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'tested"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "' positive for cancer."
   },
   "PIPE",
   {
-    "txt": "lang"
+    "txt": "lang",
+    "t": "ATTRIBUTE"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "en"
   },
@@ -6333,48 +1714,13 @@
   "CLOSETEMPLATE",
   "PRELINE",
   {
-    "txt": "To examine or try, as by the use of some "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "reagent"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": "."
+    "txt": "To examine or try, as by the use of some [[reagent]]."
   },
   "NEWLINE",
   "LISTNUMBERED",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "'"
-  },
-  {
-    "txt": "'to "
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'test"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "' a solution by litmus paper"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
+    "txt": "''to '''test''' a solution by litmus paper''"
   },
   "NEWLINE",
   "NEWLINE",
@@ -6392,24 +1738,8 @@
   },
   "LISTBULLET",
   {
-    "txt": "German: "
+    "txt": "German: {{l|de|testen}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "de",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "testen",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "NEWLINE",
   {
@@ -6430,228 +1760,40 @@
   },
   "PIPE",
   {
-    "txt": "to ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "challenge",
+    "txt": "to challenge",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Finnish: "
+    "txt": "Finnish: {{t+|fi|testata}}, {{t|fi|koestaa}}, {{t+|fi|haastaa}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fi"
-  },
-  "PIPE",
-  {
-    "txt": "testata"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "fi",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "koestaa",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fi"
-  },
-  "PIPE",
-  {
-    "txt": "haastaa"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "French: "
+    "txt": "French: {{t+|fr|tester}}, {{t+|fr|mettre à l'épreuve}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fr"
-  },
-  "PIPE",
-  {
-    "txt": "tester"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fr"
-  },
-  "PIPE",
-  {
-    "txt": "mettre à l"
-  },
-  {
-    "txt": "'épreuve"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Greek: "
+    "txt": "Greek: {{t+|el|δοκιμάζω}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "el"
-  },
-  "PIPE",
-  {
-    "txt": "δοκιμάζω"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Hungarian: "
+    "txt": "Hungarian: {{t+|hu|kihív}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "hu"
-  },
-  "PIPE",
-  {
-    "txt": "kihív"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Italian: "
+    "txt": "Italian: {{t+|it|testare}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "it"
-  },
-  "PIPE",
-  {
-    "txt": "testare"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Japanese: "
+    "txt": "Japanese: {{t|ja|試す|tr=tamesu|sc=Jpan}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ja",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "試す"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "tamesu"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Jpan"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -6662,251 +1804,33 @@
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Portuguese: "
+    "txt": "Portuguese: {{t+|pt|testar}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "pt"
-  },
-  "PIPE",
-  {
-    "txt": "testar"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Russian: "
+    "txt": "Russian: {{t+|ru|испы́тывать|impf}}, {{t+|ru|испыта́ть|pf}}, {{t+|ru|тести́ровать|impf|tr=tɛstírovatʹ}}, {{t+|ru|протести́ровать|pf|tr=protɛstírovatʹ}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ru"
-  },
-  "PIPE",
-  {
-    "txt": "испы́тывать"
-  },
-  "PIPE",
-  {
-    "txt": "impf"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ru"
-  },
-  "PIPE",
-  {
-    "txt": "испыта́ть"
-  },
-  "PIPE",
-  {
-    "txt": "pf"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ru"
-  },
-  "PIPE",
-  {
-    "txt": "тести́ровать"
-  },
-  "PIPE",
-  {
-    "txt": "impf"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "tɛstírovatʹ"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ru"
-  },
-  "PIPE",
-  {
-    "txt": "протести́ровать"
-  },
-  "PIPE",
-  {
-    "txt": "pf"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "protɛstírovatʹ"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Scottish Gaelic: "
+    "txt": "Scottish Gaelic: {{t|gd|feuch}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "gd",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "feuch",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Slovene: "
+    "txt": "Slovene: {{t|sl|preizkusiti}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "preizkusiti",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Spanish: "
+    "txt": "Spanish: {{t+|es|probar}}, {{t+|es|testear}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "es"
-  },
-  "PIPE",
-  {
-    "txt": "probar"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "es"
-  },
-  "PIPE",
-  {
-    "txt": "testear"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Swahili: "
+    "txt": "Swahili: {{t+|sw|majaribio}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sw"
-  },
-  "PIPE",
-  {
-    "txt": "majaribio"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -6923,210 +1847,35 @@
   },
   "PIPE",
   {
-    "txt": "to ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "administer ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "an ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "examination ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "during ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "the ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "academic ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "term",
+    "txt": "to administer an examination during the academic term",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Finnish: "
+    "txt": "Finnish: {{t+|fi|järjestää}} {{t+|fi|tentti}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fi"
-  },
-  "PIPE",
-  {
-    "txt": "järjestää"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fi"
-  },
-  "PIPE",
-  {
-    "txt": "tentti"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "French: "
+    "txt": "French: {{t+|fr|tester}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fr"
-  },
-  "PIPE",
-  {
-    "txt": "tester"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Greek: "
+    "txt": "Greek: {{t+|el|εξετάζω}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "el"
-  },
-  "PIPE",
-  {
-    "txt": "εξετάζω"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Hungarian: "
+    "txt": "Hungarian: {{t|hu|vizsgázik}}, {{t|hu|vizsgáztat}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "hu",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "vizsg",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "ázik"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "hu",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "vizsg",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "áztat"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Japanese: "
+    "txt": "Japanese: {{t|ja|テストする|tr=tesutosuru|sc=Jpan}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ja",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "テストする"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "tesutosuru"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Jpan"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -7137,140 +1886,23 @@
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Latin: "
+    "txt": "Latin: {{t+|la|specto}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "la"
-  },
-  "PIPE",
-  {
-    "txt": "specto"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Russian: "
+    "txt": "Russian: {{t+|ru|тести́ровать|impf|tr=tɛstírovatʹ}}, {{t+|ru|протести́ровать|pf|tr=protɛstírovatʹ}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ru"
-  },
-  "PIPE",
-  {
-    "txt": "тести́ровать"
-  },
-  "PIPE",
-  {
-    "txt": "impf"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "tɛstírovatʹ"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ru"
-  },
-  "PIPE",
-  {
-    "txt": "протести́ровать"
-  },
-  "PIPE",
-  {
-    "txt": "pf"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "protɛstírovatʹ"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Scottish Gaelic: "
+    "txt": "Scottish Gaelic: {{t|gd|feuch}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "gd",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "feuch",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Swahili: "
+    "txt": "Swahili: {{t+|sw|majaribio}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sw"
-  },
-  "PIPE",
-  {
-    "txt": "majaribio"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -7287,223 +1919,40 @@
   },
   "PIPE",
   {
-    "txt": "to ",
+    "txt": "to place a product or piece of equipment under everyday and/or extreme conditions",
     "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "place ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "a ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "product ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "or ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "piece ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "of ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "equipment ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "under ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "everyday ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "and",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "/or extreme conditions"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Catalan: "
+    "txt": "Catalan: {{t+|ca|provar}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ca"
-  },
-  "PIPE",
-  {
-    "txt": "provar"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Czech: "
+    "txt": "Czech: {{t+|cs|testovat}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "cs"
-  },
-  "PIPE",
-  {
-    "txt": "testovat"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Finnish: "
+    "txt": "Finnish: {{t+|fi|testata}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fi"
-  },
-  "PIPE",
-  {
-    "txt": "testata"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "French: "
+    "txt": "French: {{t+|fr|tester}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fr"
-  },
-  "PIPE",
-  {
-    "txt": "tester"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Greek: "
+    "txt": "Greek: {{t+|el|δοκιμάζω}}, {{t|el|θέτω υπό δοκιμασία}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "el"
-  },
-  "PIPE",
-  {
-    "txt": "δοκιμάζω"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "el",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "θέτω υπό δοκιμασία"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Hungarian: "
+    "txt": "Hungarian: {{t+|hu|tesztel}}, {{t+|hu|vizsgál}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "hu"
-  },
-  "PIPE",
-  {
-    "txt": "tesztel"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "hu"
-  },
-  "PIPE",
-  {
-    "txt": "vizsgál"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -7514,271 +1963,38 @@
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Irish: "
+    "txt": "Irish: {{t|ga|tástáil|f}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ga",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "ástáil"
-  },
-  "PIPE",
-  {
-    "txt": "f"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Italian: "
+    "txt": "Italian: {{t+|it|testare}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "it"
-  },
-  "PIPE",
-  {
-    "txt": "testare"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Portuguese: "
+    "txt": "Portuguese: {{t+|pt|testar}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "pt"
-  },
-  "PIPE",
-  {
-    "txt": "testar"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Russian: "
+    "txt": "Russian: {{t+|ru|тести́ровать|impf|tr=tɛstírovatʹ}}, {{t+|ru|протести́ровать|pf|tr=protɛstírovatʹ}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ru"
-  },
-  "PIPE",
-  {
-    "txt": "тести́ровать"
-  },
-  "PIPE",
-  {
-    "txt": "impf"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "tɛstírovatʹ"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "ru"
-  },
-  "PIPE",
-  {
-    "txt": "протести́ровать"
-  },
-  "PIPE",
-  {
-    "txt": "pf"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "protɛstírovatʹ"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Slovene: "
+    "txt": "Slovene: {{t|sl|testirati}}, {{t|sl|preizkusiti}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "testirati",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "preizkusiti",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Spanish: "
+    "txt": "Spanish: {{t+|es|examinar}}, {{t+|es|probar}}, {{t+|es|testear}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "es"
-  },
-  "PIPE",
-  {
-    "txt": "examinar"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "es"
-  },
-  "PIPE",
-  {
-    "txt": "probar"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "es"
-  },
-  "PIPE",
-  {
-    "txt": "testear"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Swahili: "
+    "txt": "Swahili: {{t+|sw|majaribio}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sw"
-  },
-  "PIPE",
-  {
-    "txt": "majaribio"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -7795,56 +2011,15 @@
   },
   "PIPE",
   {
-    "txt": "to ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "be ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "shown ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "to ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "be ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "by ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "test",
+    "txt": "to be shown to be by test",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Finnish: "
+    "txt": "Finnish: {{t+|fi|testata}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "fi"
-  },
-  "PIPE",
-  {
-    "txt": "testata"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -7855,25 +2030,8 @@
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Swahili: "
+    "txt": "Swahili: {{t+|sw|majaribio}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+"
-  },
-  "PIPE",
-  {
-    "txt": "sw"
-  },
-  "PIPE",
-  {
-    "txt": "majaribio"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -7892,66 +2050,18 @@
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Arabic: "
+    "txt": "Arabic: {{t-check|ar|اِخْتَبَرَ}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t-check",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ar",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "اِخْتَبَرَ"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Albanian: "
+    "txt": "Albanian: {{t-check|sq|provoj}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t-check",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "sq",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "provoj",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Catalan: "
+    "txt": "Catalan: {{t+check|ca|provar}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+check"
-  },
-  "PIPE",
-  {
-    "txt": "ca"
-  },
-  "PIPE",
-  {
-    "txt": "provar"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   "OPENTEMPLATE",
@@ -7965,523 +2075,69 @@
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
+  "LISTIDENT",
+  "NEWLINE",
+  "LISTBULLET",
+  "LISTIDENT",
   {
-    "txt": ":"
+    "txt": "Simplified: [[测试]] (cèshì), [[测验]] (cèyàn), [[考验]] (kǎoyàn), [[化验]] (huàyàn)"
   },
   "NEWLINE",
   "LISTBULLET",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "Simplified: "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "测试"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "(cèshì), "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "测验"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "(cèyàn), "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "考验"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "(kǎoyàn), "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "化验"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "(huàyàn)"
-  },
-  "NEWLINE",
-  "LISTBULLET",
-  "LISTDEFINITION",
-  {
-    "txt": "Traditional: "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "測試"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "(cèshì), "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "測驗"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "(cèyàn), "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "考驗"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "(kǎoyàn), "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "化驗"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "(huàyàn)"
+    "txt": "Traditional: [[測試]] (cèshì), [[測驗]] (cèyàn), [[考驗]] (kǎoyàn), [[化驗]] (huàyàn)"
   },
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Dutch: "
+    "txt": "Dutch: {{t+check|nl|test}}, {{t+check|nl|testen}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+check"
-  },
-  "PIPE",
-  {
-    "txt": "nl"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+check"
-  },
-  "PIPE",
-  {
-    "txt": "nl"
-  },
-  "PIPE",
-  {
-    "txt": "testen"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "German: "
+    "txt": "German: {{t+check|de|testen}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+check"
-  },
-  "PIPE",
-  {
-    "txt": "de"
-  },
-  "PIPE",
-  {
-    "txt": "testen"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Indonesian: "
+    "txt": "Indonesian: {{t+check|id|coba}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+check"
-  },
-  "PIPE",
-  {
-    "txt": "id"
-  },
-  "PIPE",
-  {
-    "txt": "coba"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Italian: "
+    "txt": "Italian: {{t+check|it|esaminare}}, {{t+check|it|provare}}, {{t+check|it|valutare}}, {{t+check|it|verificare}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+check"
-  },
-  "PIPE",
-  {
-    "txt": "it"
-  },
-  "PIPE",
-  {
-    "txt": "esaminare"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+check"
-  },
-  "PIPE",
-  {
-    "txt": "it"
-  },
-  "PIPE",
-  {
-    "txt": "provare"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+check"
-  },
-  "PIPE",
-  {
-    "txt": "it"
-  },
-  "PIPE",
-  {
-    "txt": "valutare"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+check"
-  },
-  "PIPE",
-  {
-    "txt": "it"
-  },
-  "PIPE",
-  {
-    "txt": "verificare"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Norwegian: "
+    "txt": "Norwegian: {{t-check|no|å teste}}, {{t-check|no|tester}}, {{t-check|no|testet}}, {{t-check|no|har testet}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t-check",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "no",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "å teste"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t-check",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "no",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "tester",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t-check",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "no",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "testet",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t-check",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "no",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "har ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "testet",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Spanish: "
+    "txt": "Spanish: {{t+check|es|examinar}}, {{t+check|es|probar}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+check"
-  },
-  "PIPE",
-  {
-    "txt": "es"
-  },
-  "PIPE",
-  {
-    "txt": "examinar"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+check"
-  },
-  "PIPE",
-  {
-    "txt": "es"
-  },
-  "PIPE",
-  {
-    "txt": "probar"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Swedish: "
+    "txt": "Swedish: {{t+check|sv|utmana}}, {{t+check|sv|testa}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+check"
-  },
-  "PIPE",
-  {
-    "txt": "sv"
-  },
-  "PIPE",
-  {
-    "txt": "utmana"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+check"
-  },
-  "PIPE",
-  {
-    "txt": "sv"
-  },
-  "PIPE",
-  {
-    "txt": "testa"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Telugu: "
+    "txt": "Telugu: {{t+check|te|పరీక్షించు|tr=pareekshiMchu|sc=Telu}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+check"
-  },
-  "PIPE",
-  {
-    "txt": "te"
-  },
-  "PIPE",
-  {
-    "txt": "పరీక్షించు"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "pareekshiMchu"
-  },
-  "PIPE",
-  {
-    "txt": "sc"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "Telu"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Thai: "
+    "txt": "Thai: {{t-check|th|ทดสอบ|tr=tót sòp}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t-check",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "th",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "ทดสอบ"
-  },
-  "PIPE",
-  {
-    "txt": "tr"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "tót sòp"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   {
-    "txt": "Vietnamese: "
+    "txt": "Vietnamese: {{t+check|vi|thi}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "t",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "+check"
-  },
-  "PIPE",
-  {
-    "txt": "vi"
-  },
-  "PIPE",
-  {
-    "txt": "thi"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "OPENTEMPLATE",
   {
@@ -8503,144 +2159,7 @@
     "t": "ENDHEADING"
   },
   {
-    "txt": "From "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "etyl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "fro",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "en",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "term",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "tester",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "lang",
-    "t": "ATTRIBUTE"
-  },
-  "EQUALS",
-  {
-    "txt": "fro"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", from "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "etyl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "la",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "en",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "term",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "testari",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  "PIPE",
-  {
-    "txt": "bear ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "witness",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": ", testify"
-  },
-  "PIPE",
-  {
-    "txt": "lang"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "la"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", from "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "term",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "testis",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  "PIPE",
-  {
-    "txt": "one ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "who ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "attests",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": ", a witness"
-  },
-  "PIPE",
-  {
-    "txt": "lang"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
-  {
-    "txt": "la"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": "."
+    "txt": "From {{etyl|fro|en}} {{term|tester|lang=fro}}, from {{etyl|la|en}} {{term|testari||bear witness, testify|lang=la}}, from {{term|testis||one who attests, a witness|lang=la}}."
   },
   "NEWLINE",
   "NEWLINE",
@@ -8686,15 +2205,7 @@
   "CLOSETEMPLATE",
   "PRELINE",
   {
-    "txt": "A "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "witness"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": "."
+    "txt": "A [[witness]]."
   },
   "NEWLINE",
   "LISTNUMBERED",
@@ -8705,27 +2216,9 @@
   "NEWLINE",
   "LISTNUMBERED",
   "LISTBULLET",
-  "LISTDEFINITION",
+  "LISTIDENT",
   {
-    "txt": "Prelates and great lords of England, who were for the more surety "
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'tests"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "'"
-  },
-  {
-    "txt": "' of that deed."
+    "txt": "Prelates and great lords of England, who were for the more surety '''tests''' of that deed."
   },
   "NEWLINE",
   "NEWLINE",
@@ -8771,23 +2264,7 @@
   "CLOSETEMPLATE",
   "PRELINE",
   {
-    "txt": "To make a "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "testament"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": ", or "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "will"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": "."
+    "txt": "To make a [[testament]], or [[will]]."
   },
   "NEWLINE",
   "NEWLINE",
@@ -8846,22 +2323,16 @@
   "LISTBULLET",
   "OPENTEMPLATE",
   {
-    "txt": "R:Webster ",
+    "txt": "R:Webster 1913",
     "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "1913"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
   "LISTBULLET",
   "OPENTEMPLATE",
   {
-    "txt": "R:Century ",
+    "txt": "R:Century 1911",
     "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "1911"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
@@ -8880,25 +2351,12 @@
   "LISTBULLET",
   "OPENDBLSQBR",
   {
-    "txt": "sett#English"
-  },
-  "PIPE",
-  {
-    "txt": "sett"
+    "txt": "sett#English|sett"
   },
   "CLOSEDBLSQBR",
   {
-    "txt": ", "
+    "txt": ", [[stet#English|stet]]"
   },
-  "OPENDBLSQBR",
-  {
-    "txt": "stet#English"
-  },
-  "PIPE",
-  {
-    "txt": "stet"
-  },
-  "CLOSEDBLSQBR",
   "NEWLINE",
   "NEWLINE",
   "OPENDBLSQBR",
@@ -9081,11 +2539,8 @@
   },
   "PIPE",
   {
-    "txt": "testovac",
+    "txt": "testovací",
     "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "í"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
@@ -9102,11 +2557,8 @@
   },
   "PIPE",
   {
-    "txt": "testov",
+    "txt": "testový",
     "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "ý"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
@@ -9168,43 +2620,7 @@
     "t": "ENDHEADING"
   },
   {
-    "txt": "From "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "etyl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "en",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "nl",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "m",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "en",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "test",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": "."
+    "txt": "From {{etyl|en|nl}} {{m|en|test}}."
   },
   "NEWLINE",
   "NEWLINE",
@@ -9227,16 +2643,15 @@
   },
   "PIPE",
   {
-    "txt": "/tɛst/"
+    "txt": "/tɛst/",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "lang"
+    "txt": "lang",
+    "t": "ATTRIBUTE"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "nl"
   },
@@ -9250,24 +2665,20 @@
   },
   "PIPE",
   {
-    "txt": "Nl-test",
+    "txt": "Nl-test.ogg",
     "t": "ATTRIBUTE"
   },
+  "PIPE",
   {
-    "txt": ".ogg"
+    "txt": "Audio",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "Audio"
+    "txt": "lang",
+    "t": "ATTRIBUTE"
   },
-  "PIPE",
-  {
-    "txt": "lang"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "nl"
   },
@@ -9302,15 +2713,17 @@
   },
   "PIPE",
   {
-    "txt": "pl",
+    "txt": "pl2",
     "t": "ATTRIBUTE"
   },
+  "EQUALS",
   {
-    "txt": "2=-s"
+    "txt": "-s"
   },
   "PIPE",
   {
-    "txt": "testje"
+    "txt": "testje",
+    "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
@@ -9418,16 +2831,15 @@
   },
   "PIPE",
   {
-    "txt": "/tɛst/"
+    "txt": "/tɛst/",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "lang"
+    "txt": "lang",
+    "t": "ATTRIBUTE"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "fr"
   },
@@ -9446,66 +2858,7 @@
     "t": "ENDHEADING"
   },
   {
-    "txt": "From "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "etyl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "fro",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "fr",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", from "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "etyl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "la",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "fr",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "term",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "testa",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "lang",
-    "t": "ATTRIBUTE"
-  },
-  "EQUALS",
-  {
-    "txt": "la"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": "."
+    "txt": "From {{etyl|fro|fr}}, from {{etyl|la|fr}} {{term|testa|lang=la}}."
   },
   "NEWLINE",
   "NEWLINE",
@@ -9536,24 +2889,11 @@
   "LISTNUMBERED",
   "OPENDBLSQBR",
   {
-    "txt": "test#English"
-  },
-  "PIPE",
-  {
-    "txt": "test"
+    "txt": "test#English|test"
   },
   "CLOSEDBLSQBR",
   {
-    "txt": ", a "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "cupel"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "or cupelling hearth in which precious metals are melted for trial and refinement."
+    "txt": ", a [[cupel]] or cupelling hearth in which precious metals are melted for trial and refinement."
   },
   "NEWLINE",
   "LISTNUMBERED",
@@ -9564,11 +2904,7 @@
   },
   "PIPE",
   {
-    "txt": "marine ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "biology",
+    "txt": "marine biology",
     "t": "ATTRIBUTE"
   },
   "PIPE",
@@ -9584,40 +2920,11 @@
   "PRELINE",
   "OPENDBLSQBR",
   {
-    "txt": "test#English"
-  },
-  "PIPE",
-  {
-    "txt": "test"
+    "txt": "test#English|test"
   },
   "CLOSEDBLSQBR",
   {
-    "txt": ", the external "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "calciferous"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  {
-    "txt": "shell, or "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "endoskeleton"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": ", of an "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "echinoderm"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": "."
+    "txt": ", the external [[calciferous]] shell, or [[endoskeleton]], of an [[echinoderm]]."
   },
   "NEWLINE",
   "NEWLINE",
@@ -9633,47 +2940,7 @@
     "t": "ENDHEADING"
   },
   {
-    "txt": "From "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "etyl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "en",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "fr",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "term",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "test",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "lang",
-    "t": "ATTRIBUTE"
-  },
-  "EQUALS",
-  {
-    "txt": "en"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", itself from Old French"
+    "txt": "From {{etyl|en|fr}} {{term|test|lang=en}}, itself from Old French"
   },
   "NEWLINE",
   "NEWLINE",
@@ -9703,33 +2970,8 @@
   "NEWLINE",
   "LISTNUMBERED",
   {
-    "txt": "a "
+    "txt": "a [[test#English|test]], a [[tryout]], a [[review]]"
   },
-  "OPENDBLSQBR",
-  {
-    "txt": "test#English"
-  },
-  "PIPE",
-  {
-    "txt": "test"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": ", a "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "tryout"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": ", a "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "review"
-  },
-  "CLOSEDBLSQBR",
   "NEWLINE",
   "NEWLINE",
   {
@@ -9746,11 +2988,7 @@
   "LISTBULLET",
   "OPENDBLSQBR",
   {
-    "txt": "tester#French"
-  },
-  "PIPE",
-  {
-    "txt": "tester"
+    "txt": "tester#French|tester"
   },
   "CLOSEDBLSQBR",
   "NEWLINE",
@@ -9827,16 +3065,15 @@
   },
   "PIPE",
   {
-    "txt": "/ˈtɛʃt/"
+    "txt": "/ˈtɛʃt/",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "lang"
+    "txt": "lang",
+    "t": "ATTRIBUTE"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "hu"
   },
@@ -9850,24 +3087,20 @@
   },
   "PIPE",
   {
-    "txt": "Hu-test",
+    "txt": "Hu-test.ogg",
     "t": "ATTRIBUTE"
   },
+  "PIPE",
   {
-    "txt": ".ogg"
+    "txt": "Audio",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "Audio"
+    "txt": "lang",
+    "t": "ATTRIBUTE"
   },
-  "PIPE",
-  {
-    "txt": "lang"
-  },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "hu"
   },
@@ -9936,11 +3169,7 @@
   },
   "PIPE",
   {
-    "txt": "three-dimensional ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "figure",
+    "txt": "three-dimensional figure",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
@@ -9976,11 +3205,7 @@
   },
   "PIPE",
   {
-    "txt": "commutative ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "ring",
+    "txt": "commutative ring",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
@@ -10001,11 +3226,8 @@
   },
   "PIPE",
   {
-    "txt": "Test ",
+    "txt": "Test (algebra)",
     "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "(algebra)"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
@@ -10086,17 +3308,11 @@
   },
   "PIPE",
   {
-    "txt": "Compound ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "words",
+    "txt": "Compound words",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
-  {
-    "txt": ":"
-  },
+  "LISTIDENT",
   "NEWLINE",
   "LISTBULLET",
   "OPENDBLSQBR",
@@ -10165,9 +3381,7 @@
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
-  {
-    "txt": ":"
-  },
+  "LISTIDENT",
   "NEWLINE",
   "LISTBULLET",
   "OPENDBLSQBR",
@@ -10384,33 +3598,18 @@
   "NEWLINE",
   "LISTNUMBERED",
   {
-    "txt": "to "
+    "txt": "to [[beat]]"
   },
-  "OPENDBLSQBR",
-  {
-    "txt": "beat"
-  },
-  "CLOSEDBLSQBR",
   "NEWLINE",
   "LISTNUMBERED",
   {
-    "txt": "to "
+    "txt": "to [[knock about]]"
   },
-  "OPENDBLSQBR",
-  {
-    "txt": "knock about"
-  },
-  "CLOSEDBLSQBR",
   "NEWLINE",
   "LISTNUMBERED",
   {
-    "txt": "to "
+    "txt": "to [[flog]]"
   },
-  "OPENDBLSQBR",
-  {
-    "txt": "flog"
-  },
-  "CLOSEDBLSQBR",
   "NEWLINE",
   "NEWLINE",
   {
@@ -10441,45 +3640,8 @@
     "t": "ENDHEADING"
   },
   {
-    "txt": "From "
+    "txt": "From {{etyl|en|nb}} {{term|test|lang=en}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "etyl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "en",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "nb",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "term",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "test",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "lang",
-    "t": "ATTRIBUTE"
-  },
-  "EQUALS",
-  {
-    "txt": "en"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "NEWLINE",
   {
@@ -10495,35 +3657,16 @@
   },
   "OPENTEMPLATE",
   {
-    "txt": "nb-noun-m",
+    "txt": "nb-noun-m1",
     "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "1"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
   "NEWLINE",
   "LISTNUMBERED",
   {
-    "txt": "a "
+    "txt": "a {{l|en|test}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "en",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "test",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "NEWLINE",
   {
@@ -10590,11 +3733,7 @@
   },
   "PIPE",
   {
-    "txt": "verb ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "form",
+    "txt": "verb form",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
@@ -10603,11 +3742,7 @@
   "LISTNUMBERED",
   "OPENTEMPLATE",
   {
-    "txt": "imperative ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "of",
+    "txt": "imperative of",
     "t": "ATTRIBUTE"
   },
   "PIPE",
@@ -10641,15 +3776,8 @@
   "LISTBULLET",
   "OPENTEMPLATE",
   {
-    "txt": "R:The ",
+    "txt": "R:The Bokmål Dictionary",
     "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "Bokm",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "ål Dictionary"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
@@ -10682,45 +3810,8 @@
     "t": "ENDHEADING"
   },
   {
-    "txt": "From "
+    "txt": "From {{etyl|en|nn}} {{term|test|lang=en}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "etyl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "en",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "nn",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "term",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "test",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "lang",
-    "t": "ATTRIBUTE"
-  },
-  "EQUALS",
-  {
-    "txt": "en"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "NEWLINE",
   {
@@ -10736,35 +3827,16 @@
   },
   "OPENTEMPLATE",
   {
-    "txt": "nn-noun-m",
+    "txt": "nn-noun-m1",
     "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "1"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
   "NEWLINE",
   "LISTNUMBERED",
   {
-    "txt": "a "
+    "txt": "a {{l|en|test}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "en",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "test",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "NEWLINE",
   {
@@ -10781,15 +3853,7 @@
   "LISTBULLET",
   "OPENTEMPLATE",
   {
-    "txt": "R:The ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "Nynorsk ",
-    "t": "ATTRIBUTE"
-  },
-  {
-    "txt": "Dictionary",
+    "txt": "R:The Nynorsk Dictionary",
     "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
@@ -10939,15 +4003,7 @@
   "CLOSETEMPLATE",
   "PRELINE",
   {
-    "txt": "a "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "pot"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": ", usually made out of clay"
+    "txt": "a [[pot]], usually made out of clay"
   },
   "NEWLINE",
   "NEWLINE",
@@ -10964,36 +4020,8 @@
   },
   "LISTBULLET",
   {
-    "txt": "English: "
+    "txt": "English: {{l|en|test}} {{qualifier|borrowed}}"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "en",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "test",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "qualifier",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "borrowed",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "NEWLINE",
   {
@@ -11166,16 +4194,15 @@
   },
   "PIPE",
   {
-    "txt": "/têst/"
+    "txt": "/têst/",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "lang"
+    "txt": "lang",
+    "t": "ATTRIBUTE"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "sh"
   },
@@ -11223,11 +4250,13 @@
   },
   "PIPE",
   {
-    "txt": "тест"
+    "txt": "тест",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "те̏ст"
+    "txt": "те̏ст",
+    "t": "ATTRIBUTE"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
@@ -11312,73 +4341,79 @@
   },
   "OPENTEMPLATE",
   {
-    "txt": "sh-decl-noun",
+    "txt": "sh-decl-noun\n",
     "t": "ATTRIBUTE"
   },
-  "NEWLINE",
   "PIPE",
   {
-    "txt": "tȅst"
+    "txt": "tȅst",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "tèstovi"
-  },
-  "NEWLINE",
-  "PIPE",
-  {
-    "txt": "testa"
+    "txt": "tèstovi\n",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "testova"
-  },
-  "NEWLINE",
-  "PIPE",
-  {
-    "txt": "testu"
+    "txt": "testa",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "testovima"
-  },
-  "NEWLINE",
-  "PIPE",
-  {
-    "txt": "test"
+    "txt": "testova\n",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "testove"
-  },
-  "NEWLINE",
-  "PIPE",
-  {
-    "txt": "teste"
+    "txt": "testu",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "testovi"
-  },
-  "NEWLINE",
-  "PIPE",
-  {
-    "txt": "testu"
+    "txt": "testovima\n",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "testovima"
-  },
-  "NEWLINE",
-  "PIPE",
-  {
-    "txt": "testom"
+    "txt": "test",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "testovima"
+    "txt": "testove\n",
+    "t": "ATTRIBUTE"
   },
-  "NEWLINE",
+  "PIPE",
+  {
+    "txt": "teste",
+    "t": "ATTRIBUTE"
+  },
+  "PIPE",
+  {
+    "txt": "testovi\n",
+    "t": "ATTRIBUTE"
+  },
+  "PIPE",
+  {
+    "txt": "testu",
+    "t": "ATTRIBUTE"
+  },
+  "PIPE",
+  {
+    "txt": "testovima\n",
+    "t": "ATTRIBUTE"
+  },
+  "PIPE",
+  {
+    "txt": "testom",
+    "t": "ATTRIBUTE"
+  },
+  "PIPE",
+  {
+    "txt": "testovima\n",
+    "t": "ATTRIBUTE"
+  },
   "CLOSETEMPLATE",
   "NEWLINE",
   "NEWLINE",
@@ -11431,11 +4466,7 @@
   "LISTNUMBERED",
   "OPENDBLSQBR",
   {
-    "txt": "test#English"
-  },
-  "PIPE",
-  {
-    "txt": "test"
+    "txt": "test#English|test"
   },
   "CLOSEDBLSQBR",
   "NEWLINE",
@@ -11499,91 +4530,30 @@
   },
   "PIPE",
   {
-    "txt": "g",
+    "txt": "g2",
     "t": "ATTRIBUTE"
   },
+  "EQUALS",
   {
-    "txt": "2=n"
+    "txt": "n"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
   "NEWLINE",
   "LISTNUMBERED",
   {
-    "txt": "a "
+    "txt": "a {{l|en|test}}, an [[examination]], a [[trial]]"
   },
-  "OPENTEMPLATE",
-  {
-    "txt": "l",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "en",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "test",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": ", an "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "examination"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": ", a "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "trial"
-  },
-  "CLOSEDBLSQBR",
   "NEWLINE",
   "LISTNUMBERED",
   {
-    "txt": "a test, an "
+    "txt": "a test, an [[attempt]], an [[experiment]]"
   },
-  "OPENDBLSQBR",
-  {
-    "txt": "attempt"
-  },
-  "CLOSEDBLSQBR",
-  {
-    "txt": ", an "
-  },
-  "OPENDBLSQBR",
-  {
-    "txt": "experiment"
-  },
-  "CLOSEDBLSQBR",
   "NEWLINE",
   "LISTNUMBERED",
   {
-    "txt": "a piece of "
+    "txt": "a piece of [[hair]] {{g|c}}"
   },
-  "OPENDBLSQBR",
-  {
-    "txt": "hair"
-  },
-  "CLOSEDBLSQBR",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "g",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "c",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
   "NEWLINE",
   "NEWLINE",
   {
@@ -11609,10 +4579,7 @@
   },
   "EQUALS",
   {
-    "txt": "1, "
-  },
-  {
-    "txt": "2"
+    "txt": "1, 2"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
@@ -11628,10 +4595,7 @@
   },
   "EQUALS",
   {
-    "txt": "1, "
-  },
-  {
-    "txt": "2"
+    "txt": "1, 2"
   },
   "CLOSETEMPLATE",
   "NEWLINE",
@@ -11786,47 +4750,7 @@
     "t": "ENDHEADING"
   },
   {
-    "txt": "From "
-  },
-  "OPENTEMPLATE",
-  {
-    "txt": "etyl",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "en",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "tr",
-    "t": "ATTRIBUTE"
-  },
-  "CLOSETEMPLATE",
-  "PRELINE",
-  "OPENTEMPLATE",
-  {
-    "txt": "term",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "test",
-    "t": "ATTRIBUTE"
-  },
-  "PIPE",
-  {
-    "txt": "lang",
-    "t": "ATTRIBUTE"
-  },
-  "EQUALS",
-  {
-    "txt": "en"
-  },
-  "CLOSETEMPLATE",
-  {
-    "txt": "."
+    "txt": "From {{etyl|en|tr}} {{term|test|lang=en}}."
   },
   "NEWLINE",
   "NEWLINE",
@@ -11849,16 +4773,15 @@
   },
   "PIPE",
   {
-    "txt": "ˈtest"
+    "txt": "ˈtest",
+    "t": "ATTRIBUTE"
   },
   "PIPE",
   {
-    "txt": "lang"
+    "txt": "lang",
+    "t": "ATTRIBUTE"
   },
-  {
-    "v": 1,
-    "t": "HEADING"
-  },
+  "EQUALS",
   {
     "txt": "tr"
   },
@@ -11919,11 +4842,7 @@
   "LISTNUMBERED",
   "OPENDBLSQBR",
   {
-    "txt": "test#English"
-  },
-  "PIPE",
-  {
-    "txt": "test"
+    "txt": "test#English|test"
   },
   "CLOSEDBLSQBR",
   "NEWLINE",
@@ -11941,62 +4860,50 @@
   },
   "OPENTEMPLATE",
   {
-    "txt": "der",
+    "txt": "der4",
     "t": "ATTRIBUTE"
   },
-  {
-    "txt": "4"
-  },
-  "PIPE",
-  "OPENDBLSQBR",
-  {
-    "txt": "testçi"
-  },
-  "CLOSEDBLSQBR",
-  "PIPE",
-  "OPENDBLSQBR",
-  {
-    "txt": "testçik"
-  },
-  "CLOSEDBLSQBR",
-  "PIPE",
-  "OPENDBLSQBR",
-  {
-    "txt": "testçilik"
-  },
-  "CLOSEDBLSQBR",
-  "PIPE",
-  "OPENDBLSQBR",
-  {
-    "txt": "testle"
-  },
-  "CLOSEDBLSQBR",
-  "PIPE",
-  "OPENDBLSQBR",
-  {
-    "txt": "testli"
-  },
-  "CLOSEDBLSQBR",
-  "PIPE",
-  "OPENDBLSQBR",
-  {
-    "txt": "testse"
-  },
-  "CLOSEDBLSQBR",
-  "PIPE",
-  "OPENDBLSQBR",
-  {
-    "txt": "testsiz"
-  },
-  "CLOSEDBLSQBR",
   "PIPE",
   {
-    "txt": "lang"
+    "txt": "[[testçi]]",
+    "t": "ATTRIBUTE"
   },
+  "PIPE",
   {
-    "v": 1,
-    "t": "HEADING"
+    "txt": "[[testçik]]",
+    "t": "ATTRIBUTE"
   },
+  "PIPE",
+  {
+    "txt": "[[testçilik]]",
+    "t": "ATTRIBUTE"
+  },
+  "PIPE",
+  {
+    "txt": "[[testle]]",
+    "t": "ATTRIBUTE"
+  },
+  "PIPE",
+  {
+    "txt": "[[testli]]",
+    "t": "ATTRIBUTE"
+  },
+  "PIPE",
+  {
+    "txt": "[[testse]]",
+    "t": "ATTRIBUTE"
+  },
+  "PIPE",
+  {
+    "txt": "[[testsiz]]",
+    "t": "ATTRIBUTE"
+  },
+  "PIPE",
+  {
+    "txt": "lang",
+    "t": "ATTRIBUTE"
+  },
+  "EQUALS",
   {
     "txt": "tr"
   },

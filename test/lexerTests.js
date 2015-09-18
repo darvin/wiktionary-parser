@@ -3,7 +3,12 @@ var expect = require('chai').expect;
 var wiktParser = require('../');
 var fs = require('fs');
 var path = require('path');
+/*todo important
+{{IPA|/tɛst/|lang=en}}
+{{audio|En-uk-a test.ogg|Audio (UK)|lang=en}}
 
+
+*/
 describe.only('wiktionary lexer lexes', function() {
   var MAX_SIZE = null;
   var l = null;

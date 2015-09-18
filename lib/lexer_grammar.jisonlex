@@ -2,6 +2,7 @@
 
 ALPHA			[a-zA-Z_]
 ALNUM			[a-fA-F0-9]
+NONBR           [^\n]
 
 %{
 
@@ -15,7 +16,7 @@ DEBUGLEX("TEXT: ",yytext);
 %}
 
 %s table list
-%x comment template link header
+%x comment link heading template templateargvalue templateargvalueQ templateargvalueAPO
 
 %%
 
@@ -34,12 +35,24 @@ DEBUGLEX("TEXT: ",yytext);
 
 "[[:"             { this.begin('link'); DEBUGLEX("OPENLINK "); return 'OPENLINK'; }
 "[["              { this.begin('link'); DEBUGLEX("OPENDBLSQBR "); return 'OPENDBLSQBR'; }
-<link>"]]"              { this.popState('link'); DEBUGLEX("CLOSEDBLSQBR "); return 'CLOSEDBLSQBR'; }
+<link>[^\n\]]+"]" { this.less(yytext.length-1); DEBUGLEX("TEXT(%s) ", yytext);  return 'TEXT'; }
+<link>"]]"              { this.popState(); DEBUGLEX("CLOSEDBLSQBR "); return 'CLOSEDBLSQBR'; }
 <link>"|"                 { DEBUGLEX("PIPE "); return 'PIPE'; }
 
 
 
 "{{"                { this.begin('template'); DEBUGLEX("OPENTEMPLATE "); return 'OPENTEMPLATE'; }
+<template>[^=\}\|]+ { DEBUGLEX("ATTRIBUTE(%s) ", yytext); return 'ATTRIBUTE'; }
+<template>"|"   {return 'PIPE';}
+<template>"="   { this.begin('templateargvalue');  return 'EQUALS';}
+<templateargvalue>\"   { this.begin('templateargvalueQ');  return 'ATTRQ'; }
+<templateargvalueQ>\"   { this.popState();this.popState();  return 'ATTRQ'; }
+<templateargvalue>\'   { this.begin('templateargvalueAPO');  return 'ATTRAPO'; }
+<templateargvalueAPO>\'   { this.popState();this.popState();  return 'ATTRAPO'; }
+<templateargvalueQ>[^\"]+ { return 'TEXT'; }
+<templateargvalueAPO>[^\']+ { return 'TEXT'; }
+<templateargvalue>[^\}\|]+ { this.popState(); return 'TEXT'; }
+
 <template>"}}"                { this.popState(); DEBUGLEX("CLOSETEMPLATE "); return 'CLOSETEMPLATE'; }
 
 
@@ -51,19 +64,19 @@ DEBUGLEX("TEXT: ",yytext);
 ^" "                { DEBUGLEX("PRELINE "); return 'PRELINE'; }
 
 ^\*[ \t]*           { 
-        if (YY_STATE!='list')
+        if (YYSTATE!='list')
             this.begin('list'); 
         DEBUGLEX("LISTBULLET "); 
         return 'LISTBULLET'; }
 
 ^\#[ \t]*           { 
-            if (YY_STATE!='list')
+            if (YYSTATE!='list')
                 this.begin('list'); 
             DEBUGLEX("LISTNUMBERED "); 
             return 'LISTNUMBERED'; }
 
 ^\:[ \t]* { 
-    if (YY_STATE!='list')
+    if (YYSTATE!='list')
         this.begin('list'); 
 
     DEBUGLEX("LISTIDENT "); 
@@ -77,6 +90,7 @@ DEBUGLEX("TEXT: ",yytext);
         DEBUGLEX("ENDHEADING(%d) ", yy.value);
         return 'ENDHEADING';
                                 }
+<heading>[^\n=]+"=" { this.less(yytext.length-1); DEBUGLEX("TEXT(%s) ", yytext);  return 'TEXT'; }
 
 
 ^"="+                           {
@@ -86,12 +100,7 @@ DEBUGLEX("TEXT: ",yytext);
         return 'HEADING';
 }
 
-
-.* {
-    /*node*/
-    DEBUGLEX("TEXT(%s) ", yytext);
-    return 'TEXT';                                                                  
-}
+.+ { DEBUGLEX("TEXT(%s) ", yytext); return 'TEXT'; }
 
 
 
