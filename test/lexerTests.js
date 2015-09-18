@@ -18,30 +18,20 @@ describe.only('wiktionary lexer lexes', function() {
     var last = null;
     do {
       last = l.lex();
-      if (last!=l.EOF)
-        if (last=='TEXT') {
-          result.push({txt:l.yytext});
-        } else {
-          if (l.yy.value){
-            result.push({
-              v:l.yy.value,
-              t:last
-            });
-
-          } else if (last=='ATTRIBUTE'){
-            result.push({
-              txt:l.yytext,
-              t:last
-            });
-
-          } else {
-            result.push(last);
-
-          }
+      if (last!=l.EOF) {
+        var str = last;
+        if (l.yy.value) {
+          str += "%"+l.yy.value;
         }
-        if (result.length>MAX_SIZE && MAX_SIZE){
-          break;
+        if (last=="TEXT"||last=="ATTRIBUTE") {
+          str += ":"+l.yytext;
         }
+        result.push(str);
+      }
+        
+      if (result.length>MAX_SIZE && MAX_SIZE){
+        break;
+      }
     } while(last!=l.EOF);
     console.log(result);
     return result;
@@ -52,22 +42,22 @@ describe.only('wiktionary lexer lexes', function() {
   });
 
   it('comment', function() {
-    expect(lexAll("<!-- something -->")).deep.eql([ 'BEGINCOMMENT', { txt: ' something ' }, 'ENDCOMMENT' ]);
+    expect(lexAll("<!-- something -->")).deep.eql([ 'BEGINCOMMENT', 'TEXT: something ', 'ENDCOMMENT' ]);
     expect(lexAll("<!---->")).deep.eql([ 'BEGINCOMMENT', 'ENDCOMMENT' ]);
-    // expect(lexAll("<!-- <!-- <!-- -->")).deep.eql([ 'BEGINCOMMENT', { txt: ' <!-- <!-- ' }, 'ENDCOMMENT' ]);
+    // expect(lexAll("<!-- <!-- <!-- -->")).deep.eql([ 'BEGINCOMMENT', 'TEXT: <!-- <!-- ', 'ENDCOMMENT' ]);
 
   });
 
   it('text', function() {
-    expect(lexAll("bla bla bla")).deep.eql([{txt: 'bla bla bla' }]);
-    expect(lexAll("bla bl\nbla")).deep.eql([ { txt: 'bla bl' }, 'NEWLINE', { txt: 'bla' } ]);
+    expect(lexAll("bla bla bla")).deep.eql(['TEXT:bla bla bla']);
+    expect(lexAll("bla bl\nbla")).deep.eql(['TEXT:bla bl', 'NEWLINE', 'TEXT:bla' ]);
     expect(lexAll("\n bla bla\n bla\n\n")).deep.eql(
         [ 'NEWLINE',
           'PRELINE',
-          { txt: 'bla bla' },
+          'TEXT:bla bla',
           'NEWLINE',
           'PRELINE',
-          { txt: 'bla' },
+          'TEXT:bla',
           'NEWLINE',
           'NEWLINE' ]);
 
@@ -75,51 +65,51 @@ describe.only('wiktionary lexer lexes', function() {
 
   it('header', function() {
     expect(lexAll("=Header one=\n")).deep.eql(
-      [ { v: 1, t: 'HEADING' },{ txt: 'Header one' },{ v: 1, t: 'ENDHEADING' } ]);
+      [ 'HEADING%1','TEXT:Header one','ENDHEADING%1' ]);
     expect(lexAll("==Header two==\n")).deep.eql(
-      [ { v: 2, t: 'HEADING' },{ txt: 'Header two' },{ v: 2, t: 'ENDHEADING' } ]);
+      [ 'HEADING%2','TEXT:Header two','ENDHEADING%2' ]);
     expect(lexAll("==Header two==\nsomething \n===Header three=== \n=")).deep.eql(
-      [ { v: 2, t: 'HEADING' },
-        { txt: 'Header two' },
-        { v: 2, t: 'ENDHEADING' },
-        { txt: 'something ' },
+      [ 'HEADING%2',
+        'TEXT:Header two',
+        'ENDHEADING%2',
+        'TEXT:something ',
         'NEWLINE',
-        { v: 3, t: 'HEADING' },
-        { txt: 'Header three' },
-        { v: 3, t: 'ENDHEADING' },
-        { v: 1, t: 'HEADING' } ]);
+        'HEADING%3',
+        'TEXT:Header three',
+        'ENDHEADING%3',
+        'HEADING%1' ]);
     expect(lexAll("=Header one= \n")).deep.eql(
-      [ { v: 1, t: 'HEADING' },{ txt: 'Header one' },{ v: 1, t: 'ENDHEADING' } ]);
+      [ 'HEADING%1','TEXT:Header one','ENDHEADING%1' ]);
     // expect(lexAll("=Header=one= \n")).deep.eql(
-    //   [ { v: 1, t: 'HEADING' },{ txt: 'Header=one' },{ v: 1, t: 'ENDHEADING' } ]);
+    //   [ 'HEADING%1','TEXT:Header=one','ENDHEADING%1' ]);
 
   });
 
   it('template', function() {
     expect(lexAll("{{en-noun}}")).deep.eql(
       [ 'OPENTEMPLATE',
-        { txt: 'en-noun', t: 'ATTRIBUTE' },
+        'ATTRIBUTE:en-noun',
         'CLOSETEMPLATE' ]
       );
     expect(lexAll("{{etyl|enm|en}} ")).deep.eql(
       [ 'OPENTEMPLATE',
-        { txt: 'etyl', t: 'ATTRIBUTE' },
+        'ATTRIBUTE:etyl',
         'PIPE',
-        { txt: 'enm', t: 'ATTRIBUTE' },
+        'ATTRIBUTE:enm',
         'PIPE',
-        { txt: 'en', t: 'ATTRIBUTE' },
+        'ATTRIBUTE:en',
         'CLOSETEMPLATE',
         'PRELINE' ]);
     var exp1 = [ 'OPENTEMPLATE',
-        { txt: 'etyl', t: 'ATTRIBUTE' },
+        'ATTRIBUTE:etyl',
         'PIPE',
-        { txt: 'lang', t: 'ATTRIBUTE' },
+        'ATTRIBUTE:lang',
         'EQUALS',
-        { txt: 'enm' },
+        'TEXT:enm',
         'PIPE',
-        { txt: 'langAnother', t: 'ATTRIBUTE' },
+        'ATTRIBUTE:langAnother',
         'EQUALS',
-        { txt: 'en' },
+        'TEXT:en',
         'CLOSETEMPLATE',
         'PRELINE' ];
     expect(lexAll("{{etyl|lang=enm|langAnother=en}} ")).deep.eql(exp1);
@@ -127,31 +117,30 @@ describe.only('wiktionary lexer lexes', function() {
     // expect(lexAll("{{etyl|lang=enm| langAnother= en}} ")).deep.eql(exp1);
     // expect(lexAll("{{ etyl |lang=enm| langAnother= en}} ")).deep.eql(exp1);
     expect(lexAll("{{etyl|lang=\"enm\"|langAnother=en}} ")).deep.eql([ 'OPENTEMPLATE',
-      { txt: 'etyl', t: 'ATTRIBUTE' },
+      'ATTRIBUTE:etyl',
       'PIPE',
-      { txt: 'lang', t: 'ATTRIBUTE' },
+      'ATTRIBUTE:lang',
       'EQUALS',
       'ATTRQ',
-      { txt: 'enm' },
+      'TEXT:enm',
       'ATTRQ',
       'PIPE',
-      { txt: 'langAnother', t: 'ATTRIBUTE' },
+      'ATTRIBUTE:langAnother',
       'EQUALS',
-      { txt: 'en' },
+      'TEXT:en',
       'CLOSETEMPLATE',
       'PRELINE' ]);
 
   });
 
   it('links', function() {
-    expect(lexAll("[[lt:test]]")).deep.eql([ 'OPENDBLSQBR', { txt: 'lt:test' }, 'CLOSEDBLSQBR' ]);
+    expect(lexAll("[[lt:test]]")).deep.eql([ 'OPENDBLSQBR', 'TEXT:lt:test', 'CLOSEDBLSQBR' ]);
   });
 
   it("'test' word article", function() {
     var wikitext = fs.readFileSync(path.join(__dirname,"fixtures", "test.wiki"), {encoding:'utf8'});
     var result = lexAll(wikitext);
-    var resstr = JSON.stringify(result, null, 2);
-    fs.writeFileSync(path.join(__dirname,"fixtures","test.wiki.output.json"), resstr, {encoding:'utf8'});
+    fs.writeFileSync(path.join(__dirname,"fixtures","test.wiki.output.txt"), result.join("\n"), {encoding:'utf8'});
     expect(result).deep.eql(null);
   });
 });
