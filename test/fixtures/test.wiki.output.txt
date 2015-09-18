@@ -2618,12 +2618,16 @@ PIPE
 ATTRIBUTE:author
 EQUALS
 OPENSQBR
-TEXT:http://www.americanscientist.org/authors/detail/charles-t-ambrose Charles T. Ambrose]\n
+TEXT:http://www.americanscientist.org/authors/detail/charles-t-ambrose Charles T. Ambrose
+CLOSESQBR
+NEWLINE
 PIPE
 ATTRIBUTE:title
 EQUALS
 OPENSQBR
-TEXT:http://www.americanscientist.org/issues/feature/2013/3/alzheimerrsquos-disease-the-great-morbidity-of-the-21st-century Alzheimer’s Disease]\n
+TEXT:http://www.americanscientist.org/issues/feature/2013/3/alzheimerrsquos-disease-the-great-morbidity-of-the-21st-century Alzheimer’s Disease
+CLOSESQBR
+NEWLINE
 PIPE
 ATTRIBUTE:volume
 EQUALS

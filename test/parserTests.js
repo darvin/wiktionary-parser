@@ -12,7 +12,7 @@ describe('wiktionary parser', function() {
   	before(function() {
 			var wikitext = fs.readFileSync(path.join(__dirname,"fixtures", "test.wiki"), {encoding:'utf8'});
 
-      r = wiktParser.parseWiki(wikitext);	  
+      r = wiktParser.Parser.parser.parse(wikitext);	  
     });
 
     it('should parse wiki', function () {
@@ -46,7 +46,7 @@ describe('wiktionary parser', function() {
   	before(function() {
 			var wikitext = fs.readFileSync(path.join(__dirname,"fixtures", "sample.wiki"), {encoding:'utf8'});
 
-      r = wiktParser.parseWiki(wikitext);	  
+      r = wiktParser.Parser.parser.parse(wikitext);   
     });
 
     it('should parse wiki', function () {

@@ -48,8 +48,8 @@ DEBUGLEX("TEXT: ",yytext);
 <link>"]]"              { this.popState(); DEBUGLEX("CLOSEDBLSQBR "); return 'CLOSEDBLSQBR'; }
 <link>"|"                 { DEBUGLEX("PIPE "); return 'PIPE'; }
 
-"["     return 'OPENSQBR';
-"]"     return 'CLOSESQBR';
+"["    { this.begin('link'); return 'OPENSQBR'; }
+<link>"]"    { this.popState(); return 'CLOSESQBR'; }
 
 
 "{{"                { this.begin('template'); DEBUGLEX("OPENTEMPLATE "); return 'OPENTEMPLATE'; }

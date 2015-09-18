@@ -99,7 +99,8 @@ linktrail       : CLOSEDBLSQBR
                 ;
 
 
-/*|   externallink*/
+externallink    :   OPENSQBR textinlink CLOSESQBR
+                ;
 linketc         :   OPENDBLSQBR textinlink linktrail
                 |   OPENDBLSQBR textinlink PIPE linktrail
                 |   OPENDBLSQBR textinlink pipeseries linktrail
@@ -278,6 +279,7 @@ textelement         :   TEXT
                     |   CLOSETEMPLATE
                     |   comment
                     |   linketc
+                    |   externallink
                     |   italicsorbold
                     |   template
                     |   templatevar
@@ -404,22 +406,27 @@ textelementintmpl   :   TEXT
                     |   ATTRIBUTE
                     |   comment
                     |   linketc
+                    |   externallink
                     |   italicsorbold
                     |   template
                     |   templatevar
+                    |   NEWLINE
+                    |   PRELINE
                     ;
 /*
 textinexternallink  :   TEXT
             |   CLOSEEXTERNALLINK
 */
-template            :   OPENTEMPLATE textintmpl CLOSETEMPLATE
-                    |   OPENPENTUPLECURLY textintmpl CLOSETEMPLATEVAR textintmpl CLOSETEMPLATE
-                    |   OPENTEMPLATE textintmpl OPENTEMPLATEVAR textintmpl CLOSEPENTUPLECURLY
-                    /* cater for invalid mark-up... */
-                    |   OPENTEMPLATE textintmpl
-                    |   OPENPENTUPLECURLY textintmpl CLOSETEMPLATEVAR textintmpl
-                    |   OPENTEMPLATE textintmpl OPENTEMPLATEVAR textintmpl
-                    |   OPENTEMPLATE textintmpl PIPE attributes CLOSETEMPLATE
+
+
+templateargs        :   templateargs PIPE
+                    |   ATTRIBUTE EQUALS textintmpl
+                    |   ATTRIBUTE EQUALS ATTRQ textintmpl ATTRQ
+                    |   ATTRIBUTE EQUALS ATTRAPO textintmpl ATTRAPO
+                    |   textintmpl
+                    ;
+
+template            :   OPENTEMPLATE templateargs CLOSETEMPLATE
                     ;
 
 templatevar         :   OPENTEMPLATEVAR textintmpl CLOSETEMPLATEVAR
