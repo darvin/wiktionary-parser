@@ -6,7 +6,15 @@ var path = require('path');
 var fs = require('fs');
 
 
+function p(txt) {
+  return wiktParser.Parser.parser.parse(txt);
+}
 describe('wiktionary parser', function() {
+  describe.only('parses simple chunks like', function() {
+    it('header', function(){
+      expect(p('===HeaderThree===\n')).deep.eql(null);
+    });
+  });
   describe('parses "test"', function () {
   	var r = null;
   	before(function() {
